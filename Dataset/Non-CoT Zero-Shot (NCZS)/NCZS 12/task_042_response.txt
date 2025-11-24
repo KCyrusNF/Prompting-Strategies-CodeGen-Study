@@ -1,0 +1,20 @@
+Here’s a Python function is_palindrome(s) that checks if a string is a palindrome:
+def is_palindrome(s):
+    # Convert the string to lowercase to make it case-insensitive
+    s = s.lower()
+    
+    # Remove any spaces and check if the string is the same forwards and backwards
+    s = ''.join(s.split())  # This will remove all spaces
+    return s == s[::-1]  # Compare the string with its reverse
+
+# Example usage:
+print(is_palindrome("Racecar"))  # True
+print(is_palindrome("hello"))    # False
+print(is_palindrome("A man a plan a canal Panama"))  # True
+Explanation:
+
+The string is first converted to lowercase using s.lower() to make the check case-insensitive.
+
+Spaces are removed using ''.join(s.split()) to handle palindromes with spaces (e.g., "A man a plan a canal Panama").
+
+The string is compared with its reverse (s[::-1]), and if they match, it’s a palindrome.

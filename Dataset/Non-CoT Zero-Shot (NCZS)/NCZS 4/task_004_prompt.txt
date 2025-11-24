@@ -1,0 +1,1 @@
+Now write a function sum_digits(n) that returns the sum of all digits in the integer n.

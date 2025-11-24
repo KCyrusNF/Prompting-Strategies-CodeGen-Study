@@ -1,0 +1,34 @@
+Here’s a simple and efficient Python function to determine if a number is prime:
+def is_prime(n):
+    if n <= 1:
+        return False
+    if n == 2:
+        return True
+    if n % 2 == 0:
+        return False
+
+    for i in range(3, int(n**0.5) + 1, 2):
+        if n % i == 0:
+            return False
+    return True
+✅ How it works:
+
+Check small cases:
+
+Numbers ≤ 1 → not prime
+
+2 → prime
+
+Even numbers > 2 → not prime
+
+Check divisibility only up to √n:
+If a number has any divisor greater than its square root, the complementary divisor will be smaller than the square root — so you only need to check up to that point.
+
+Skip even numbers beyond 2 to make it faster.
+
+🔍 Examples:
+print(is_prime(2))   # True
+print(is_prime(17))  # True
+print(is_prime(4))   # False
+print(is_prime(15))  # False
+print(is_prime(29))  # True

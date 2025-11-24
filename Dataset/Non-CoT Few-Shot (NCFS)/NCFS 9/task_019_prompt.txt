@@ -1,0 +1,7 @@
+Example 1:
+Input: 'hello' → Output: 2
+Example 2:
+Input: 'sky' → Output: 0
+Example 3:
+Input: 'aei' → Output: 3
+Now write a function count_vowels(s) that returns how many lowercase English vowels ('a','e','i','o','u') appear in s.

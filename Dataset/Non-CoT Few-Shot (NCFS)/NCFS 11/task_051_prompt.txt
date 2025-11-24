@@ -1,0 +1,8 @@
+"I need a function to validate binary strings. Here are some test cases:
+
+Input: '1010' → Output: True
+Input: '1234' → Output: False  
+Input: '' → Output: True
+Input: '10a1' → Output: False
+
+Write a Python function is_binary(s) that produces these outputs."

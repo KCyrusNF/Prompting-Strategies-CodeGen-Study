@@ -1,0 +1,40 @@
+Sure! Let's break it down step by step:
+
+Step-by-Step Breakdown:
+
+Input: The function receives a string s as input.
+
+Iteration: We will loop through the string starting from the last character, moving towards the first.
+
+Reversing: For each character, we collect them in reverse order.
+
+Output: Finally, we return the string that contains the characters in reversed order.
+
+Here's the function implementation:
+
+def reverse_string(s):
+    # Initialize an empty string to hold the reversed characters
+    reversed_str = ""
+    
+    # Loop through the string from the last character to the first
+    for i in range(len(s)-1, -1, -1):
+        reversed_str += s[i]
+    
+    return reversed_str
+Example 1:
+
+Input: 'abc'
+
+Process: Start from 'c', then 'b', and 'a' → reversed string is 'cba'
+
+Output: 'cba'
+
+Example 2:
+
+Input: 'hello'
+
+Process: Start from 'o', then 'l', 'l', 'e', and 'h' → reversed string is 'olleh'
+
+Output: 'olleh'
+
+Let me know if you'd like to test this with other examples!

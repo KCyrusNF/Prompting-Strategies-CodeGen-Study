@@ -1,0 +1,2 @@
+To convert Fahrenheit to Celsius, subtract 32 from the Fahrenheit value, then multiply the result by 5/9.
+Think step by step and write a function to_celsius(f) that returns the Celsius value.

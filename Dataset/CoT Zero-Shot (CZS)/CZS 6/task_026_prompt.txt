@@ -1,0 +1,4 @@
+To compute the average of a list, think step by step:
+First, add up all the numbers in the list.
+Then, divide this total by how many numbers the list contains.
+Now write a function average_of_list(nums) that returns the mean of a non-empty list of numbers.

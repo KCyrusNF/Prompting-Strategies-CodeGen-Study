@@ -1,0 +1,13 @@
+Example 1:
+Input: [1, -2, 3, 0]
+Reasoning: Check each element: 1 > 0 (yes, count it), -2 > 0 (no), 3 > 0 (yes, count it), 0 > 0 (no) → total count = 2
+Output: 2
+Example 2:
+Input: [-5, -1, 0]
+Reasoning: Check each element: -5 > 0 (no), -1 > 0 (no), 0 > 0 (no) → total count = 0
+Output: 0
+Now, solve step by step:
+First, go through each number in the list one by one.
+Then, for each number, check if it is greater than 0.
+If it is greater than 0, increment your counter.
+Finally, write a function count_positives(nums) that returns how many elements in the list are greater than 0.s

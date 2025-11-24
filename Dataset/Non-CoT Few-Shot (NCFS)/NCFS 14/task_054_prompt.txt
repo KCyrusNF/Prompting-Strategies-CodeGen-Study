@@ -1,0 +1,8 @@
+"Find common elements between lists:
+
+Lists [1, 2, 3] and [2, 3, 4] → Common: [2, 3]
+Lists [1, 2, 2] and [2, 2, 3] → Common: [2] (no duplicates)
+Lists [1, 2] and [3, 4] → Common: []
+Lists [5, 5, 5] and [5] → Common: [5]
+
+Write list_intersection(list1, list2)."

@@ -1,0 +1,67 @@
+Let's break down the task step by step and implement the solution in Python.
+
+Step-by-Step Approach:
+
+Sort the first string s1:
+
+Convert the string s1 into a list of characters.
+
+Sort the characters alphabetically.
+
+Join them back into a string.
+
+Sort the second string s2:
+
+Similarly, convert the string s2 into a list of characters.
+
+Sort them alphabetically.
+
+Join them back into a string.
+
+Compare the two sorted strings:
+
+If the sorted strings are identical, then the original strings are anagrams.
+
+If the sorted strings are different, then they are not anagrams.
+
+Python Code Implementation:
+def are_anagrams(s1, s2):
+    # Step 1: Sort the first string
+    sorted_s1 = ''.join(sorted(s1))
+    
+    # Step 2: Sort the second string
+    sorted_s2 = ''.join(sorted(s2))
+    
+    # Step 3: Compare the sorted strings
+    return sorted_s1 == sorted_s2
+
+# Test cases
+print(are_anagrams('listen', 'silent'))  # Output: True
+print(are_anagrams('hello', 'world'))    # Output: False
+print(are_anagrams('abc', 'cba'))        # Output: True
+print(are_anagrams('rat', 'car'))        # Output: False
+
+Explanation of the Code:
+
+Sorting the strings: We use the sorted() function in Python, which sorts the characters of a string. The sorted() function returns a list, so we use ''.join() to convert the list back into a string.
+
+Comparison: After sorting both strings, we simply compare them using the == operator. If they are equal, it means the original strings were anagrams.
+
+Example Walkthrough:
+Example 1: are_anagrams('listen', 'silent')
+
+Sort 'listen' → 'eilnst'
+
+Sort 'silent' → 'eilnst'
+
+Compare: 'eilnst' == 'eilnst' → True (They are anagrams).
+
+Example 2: are_anagrams('hello', 'world')
+
+Sort 'hello' → 'ehllo'
+
+Sort 'world' → 'dlorw'
+
+Compare: 'ehllo' == 'dlorw' → False (They are not anagrams).
+
+Let me know if you have any questions or want further explanations!

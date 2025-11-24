@@ -1,0 +1,47 @@
+Sure! Let's break this down step by step and then write the Python function.
+
+Step-by-Step Process:
+
+Iterate through each character of the string s.
+
+Check if the character is a vowel: A vowel is one of 'a', 'e', 'i', 'o', or 'u'. You can do this by checking if the character is in the string 'aeiou'.
+
+Maintain a counter: Start a counter at 0, and each time you find a vowel, increment the counter by 1.
+
+Return the counter: After checking all the characters in the string, return the final count.
+
+Python Function:
+
+def count_vowels(s):
+    # Initialize the counter to 0
+    count = 0
+    
+    # Loop through each character in the string
+    for char in s:
+        # Check if the character is a vowel
+        if char in 'aeiou':
+            count += 1
+    
+    # Return the final count
+    return count
+Test Cases:
+print(count_vowels('hello'))  # Output: 2
+print(count_vowels('sky'))    # Output: 0
+print(count_vowels('aeiou'))  # Output: 5
+print(count_vowels('python')) # Output: 1
+Explanation:
+
+
+For 'hello', the vowels are 'e' and 'o', so the count is 2.
+
+
+For 'sky', there are no vowels, so the count is 0.
+
+
+For 'aeiou', all characters are vowels, so the count is 5.
+
+
+For 'python', the only vowel is 'o', so the count is 1.
+
+
+Would you like to try it with any other examples or test cases?

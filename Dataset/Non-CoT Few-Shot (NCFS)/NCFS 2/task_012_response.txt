@@ -1,0 +1,7 @@
+You can write the function to_celsius(f) in Python like this:
+def to_celsius(f):
+    return (f - 32) * 5 / 9
+Example usage:
+print(to_celsius(32))  # Output: 0.0
+print(to_celsius(212))  # Output: 100.0
+This function takes the Fahrenheit temperature f as input and returns the equivalent temperature in Celsius.

@@ -1,0 +1,12 @@
+Example 1:
+Input: (3, 7, 5)
+Reasoning: Compare 3 and 7: 7 is larger, then compare 7 and 5: 7 is still larger → result is 7
+Output: 7
+Example 2:
+Input: (9, 2, 9)
+Reasoning: Compare 9 and 2: 9 is larger, then compare 9 and 9: 9 remains the largest → result is 9
+Output: 9
+Now, solve step by step:
+First, compare the first two numbers (a and b) and determine which one is larger.
+Then, take the larger value from the first comparison and compare it with the third number (c).
+Finally, write a function max_of_three(a, b, c) that returns the largest of the three input values.

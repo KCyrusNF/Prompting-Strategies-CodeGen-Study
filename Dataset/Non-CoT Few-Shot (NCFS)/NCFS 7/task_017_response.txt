@@ -1,0 +1,13 @@
+Here’s the Python solution for your prompt:
+def reverse_string(s):
+    return s[::-1]
+✅ Explanation:
+
+s[::-1] uses Python slicing to reverse the string.
+
+It starts from the end and moves backwards by step -1.
+
+Examples:
+print(reverse_string('abc'))   # Output: 'cba'
+print(reverse_string('race'))  # Output: 'ecar'
+print(reverse_string(''))      # Output: ''

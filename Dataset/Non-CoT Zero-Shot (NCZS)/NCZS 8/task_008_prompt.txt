@@ -1,0 +1,1 @@
+Now write a python function factorial_iter(n) that returns n! (n factorial) using an iterative loop. Assume n is a non-negative integer (0! = 1).

@@ -1,0 +1,1 @@
+"Write a Python function rotate_list(nums, k) that rotates the list nums to the right by k positions."

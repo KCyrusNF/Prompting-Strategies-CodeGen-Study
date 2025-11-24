@@ -1,0 +1,7 @@
+Example 1:
+Input: 2000 → Output: True
+Example 2:
+Input: 1900 → Output: False
+Example 3:
+Input: 2024 → Output: True
+Now write a function is_leap_year(year) that determines if a year is a leap year using the Gregorian calendar rules.

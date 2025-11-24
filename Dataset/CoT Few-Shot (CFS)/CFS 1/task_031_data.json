@@ -1,0 +1,73 @@
+{
+	"prompt_design": {
+		"task_metadata": {
+			"task_id": "task_031",
+			"task_title": "Count Positive Numbers in a List",
+			"task_description": "Write a Python function count_positives(nums) that counts how many elements in the list are greater than 0.",
+			"expected_output_format": "Integer (count of positive numbers)",
+			"difficulty_level": "2/10",
+			"topic_area": "Programming, Python, Loops, Conditional Logic"
+		},
+		"prompt": [
+			{
+				"reasoning_style": "CoT",
+				"example_context": "Zero-Shot",
+				"prompt_text": "task_031_prompt.txt"
+				"num_examples": 2,
+				"prompt_tokens": 205
+			}
+		],
+		"runs": [
+			{
+				"response": {
+					"model_response": "task_031_response.txt"
+					"output_tokens": 181,
+					"compile_errors": 0,
+					"semantic_errors": 0
+				},
+				"experiment_record": {
+					"timestamp": "2025-11-02T00:00:00Z",
+					"model_name": "GPT-5 via ChatGPT Plus",
+					"token_counter_model": "tiktoken for gpt-4o",
+					"temperature": 0.0,
+					"cost_rates": {
+						"input_cost_per_1M_tokens_usd": 1.250,
+						"output_cost_per_1M_tokens_usd": 0.125,
+						"cached_input_cost_per_1M_tokens_usd": 10.000
+					},
+					"cost_usd": 0.00206625,
+					"self_evaluation": {
+						"accuracy": 10,
+						"coherence_score": 10,
+						"confidence": 9,
+						"reasoning_clarity": 10,
+						"difficulty_of_interpreting_prompt": 1,
+						"comments": ""
+					}
+					"supervised-evaluations": [
+						{
+							"evaluator_name": "Koorosh Nobakhtfar",
+							"factual_correctness": 5,
+							"Reasoning_quality": 4,
+							"coherency_and_clarity": 4,
+							"completeness": 5,
+							"understanding_depth": 5,
+							"weighted_total": 91,
+							"comments": ""
+						}
+						{
+							"evaluator_name": "Kenan Çakılcı",
+							"factual_correctness": 5,
+							"Reasoning_quality": 5,
+							"coherency_and_clarity": 5,
+							"completeness": 5,
+							"understanding_depth": 4,
+							"weighted_total": 98,
+							"comments": ""
+						}
+					],
+				}
+			}
+		]
+	}
+}

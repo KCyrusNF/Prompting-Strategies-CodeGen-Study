@@ -1,0 +1,44 @@
+Here’s a clean and efficient implementation of the function are_anagrams(s1, s2) in Python:
+
+def are_anagrams(s1, s2):
+    # Remove spaces and convert to lowercase for case-insensitive comparison
+    s1 = s1.replace(" ", "").lower()
+    s2 = s2.replace(" ", "").lower()
+    
+    # If lengths differ, they cannot be anagrams
+    if len(s1) != len(s2):
+        return False
+    
+    # Compare sorted versions of both strings
+    return sorted(s1) == sorted(s2)
+
+✅ Example Usage:
+print(are_anagrams("listen", "silent"))     # True
+print(are_anagrams("Hello", "Olelh"))       # True
+print(are_anagrams("Apple", "Papel"))       # True
+print(are_anagrams("Cat", "Act "))          # True
+print(are_anagrams("Test", "Taste"))        # False
+
+🔹 Alternative (more efficient) version using collections.Counter:
+from collections import Counter
+
+def are_anagrams(s1, s2):
+    s1 = s1.replace(" ", "").lower()
+    s2 = s2.replace(" ", "").lower()
+    return Counter(s1) == Counter(s2)
+
+
+This approach avoids sorting (which is 
+𝑂
+(
+𝑛
+log
+⁡
+𝑛
+)
+O(nlogn)) and instead counts character frequencies in 
+𝑂
+(
+𝑛
+)
+O(n), making it more efficient for longer strings.

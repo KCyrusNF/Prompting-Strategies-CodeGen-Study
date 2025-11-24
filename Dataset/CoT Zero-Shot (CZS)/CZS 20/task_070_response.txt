@@ -1,0 +1,31 @@
+Sure! Let's break down the steps to determine if two strings are anagrams.
+
+Step-by-Step Explanation:
+
+Sort the characters of both strings: This will allow us to easily compare the strings since anagrams will have the exact same characters in the same frequency.
+
+Compare the sorted strings: If the sorted version of both strings is identical, then the strings are anagrams. Otherwise, they are not.
+
+Python Code:
+def are_anagrams(s1, s2):
+    # Step 1: Sort the characters of both strings
+    sorted_s1 = sorted(s1)
+    sorted_s2 = sorted(s2)
+    
+    # Step 2: Compare the sorted strings
+    return sorted_s1 == sorted_s2
+
+Explanation of the Code:
+
+sorted(s1) and sorted(s2) will return lists of characters sorted in ascending order for both strings.
+
+If the sorted lists are equal, it means the strings are anagrams (since they contain the same characters in the same frequencies).
+
+The function returns True if the sorted strings are identical, otherwise False.
+
+Example:
+print(are_anagrams("listen", "silent"))  # Output: True
+print(are_anagrams("hello", "world"))    # Output: False
+
+
+This approach works because sorting ensures that if the strings are anagrams, the sorted versions will match exactly. Let me know if you'd like to improve or add any features!

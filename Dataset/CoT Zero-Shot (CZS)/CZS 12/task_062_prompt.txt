@@ -1,0 +1,7 @@
+To check whether a string is a palindrome, think step by step
+Normalize the input text by
+Keeping only alphanumeric characters.
+Converting all letters to lowercase.
+Compare the normalized string to its reverse.
+If they are identical, return True; otherwise, return False.
+Then write the function is_palindrome(s)."

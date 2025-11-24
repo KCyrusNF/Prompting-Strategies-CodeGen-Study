@@ -1,0 +1,34 @@
+To solve the problem of finding the sum of digits of an integer, we need to repeatedly extract each digit of the number and add them up.
+
+Here’s the step-by-step breakdown of how we can achieve that:
+
+Extract digits one by one: We can extract the last digit of the integer n by taking the remainder when divided by 10 (n % 10).
+
+Remove the last digit: We can remove the last digit by performing integer division by 10 (n // 10).
+
+Repeat: We will continue this process until n becomes 0.
+
+Add each digit: As we extract each digit, we add it to a running total.
+
+Let's implement the function sum_digits(n):
+def sum_digits(n):
+    # Make sure n is non-negative
+    n = abs(n)
+    total = 0
+    
+    while n > 0:
+        total += n % 10  # Add the last digit to total
+        n = n // 10      # Remove the last digit from n
+    
+    return total
+Explanation:
+
+abs(n): Ensures that if n is negative, we still work with the positive value since the sum of digits is the same for both positive and negative numbers.
+
+n % 10: This gives us the last digit of n.
+
+n // 10: This removes the last digit from n so we can continue with the next iteration.
+
+Example usage:
+print(sum_digits(1234))  # Output: 10 (1 + 2 + 3 + 4)
+print(sum_digits(-5678)) # Output: 26 (5 + 6 + 7 + 8)

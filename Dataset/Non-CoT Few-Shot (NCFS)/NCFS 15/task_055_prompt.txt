@@ -1,0 +1,8 @@
+"Count words in these strings:
+
+'Hello world' has 2 words
+'Python is great' has 3 words
+'' has 0 words
+'  extra   spaces  ' has 2 words (ignore extra spaces)
+
+Build count_words(s) accordingly."

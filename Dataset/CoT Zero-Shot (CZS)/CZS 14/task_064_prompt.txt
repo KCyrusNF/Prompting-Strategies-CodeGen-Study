@@ -1,0 +1,6 @@
+Think step-by-step to find common elements of two lists efficiently.
+Convert the first list to a set.
+Convert the second list to a set.
+Compute the intersection of the two sets.
+Convert the intersection back to a list and return it.
+Write a Python function list_intersection(list1, list2) that returns a list containing the elements present in both input lists.

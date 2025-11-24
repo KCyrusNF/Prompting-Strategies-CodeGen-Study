@@ -1,0 +1,51 @@
+To solve this step by step:
+
+Step 1: Compare the first two numbers (a and b)
+
+We compare the two numbers to determine which one is larger.
+
+Step 2: Compare the larger of the first comparison with the third number (c)
+
+After finding the larger of the first two numbers, we then compare it with the third number to get the largest overall.
+
+Step 3: Write the function max_of_three(a, b, c)
+
+The function will use the steps outlined above to return the largest of the three values.
+
+Here’s the code for the function:
+
+def max_of_three(a, b, c):
+    # Step 1: Compare a and b
+    larger_of_ab = a if a > b else b
+    
+    # Step 2: Compare the larger of (a, b) with c
+    largest = larger_of_ab if larger_of_ab > c else c
+    
+    return largest
+
+Explanation:
+
+We first compare a and b and store the larger of the two in larger_of_ab.
+
+Then, we compare larger_of_ab with c to determine the largest value.
+
+Example Walkthrough:
+Example 1:
+
+Input: (3, 7, 5)
+
+Compare 3 and 7 → 7 is larger.
+
+Compare 7 with 5 → 7 remains the largest.
+Output: 7
+
+Example 2:
+
+Input: (9, 2, 9)
+
+Compare 9 and 2 → 9 is larger.
+
+Compare 9 with 9 → 9 remains the largest.
+Output: 9
+
+Let me know if you need more clarification or further examples!

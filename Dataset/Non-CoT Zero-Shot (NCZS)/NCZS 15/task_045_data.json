@@ -1,0 +1,73 @@
+{
+	"prompt_design": {
+		"task_metadata": {
+			"task_id": "task_045",
+			"task_title": "Count Words in a String",
+			"task_description": "Write a Python function count_words(s) that returns the number of words in a given string. Words are separated by spaces.",
+			"expected_output_format": "Python function and example usage.",
+			"difficulty_level": "1/10",
+			"topic_area": "Programming, Python, String Processing"
+		},
+		"prompt": [
+			{
+				"reasoning_style": "Non-CoT",
+				"example_context": "Zero-Shot",
+				"prompt_text": "task_045_prompt.txt",
+				"num_examples": 0,
+				"prompt_tokens": 26
+			}
+		],
+		"runs": [
+			{
+				"response": {
+					"model_response": "task_045_response.txt"
+					"output_tokens": 151,
+					"compile_errors": 0,
+					"semantic_errors": 0
+				},
+				"experiment_record": {
+					"timestamp": "2025-11-02T00:00:00Z",
+					"model_name": "GPT-5 via ChatGPT Plus",
+					"token_counter_model": "tiktoken for gpt-4o",
+					"temperature": 0.0,
+					"cost_rates": {
+						"input_cost_per_1M_tokens_usd": 1.250,
+						"output_cost_per_1M_tokens_usd": 0.125,
+						"cached_input_cost_per_1M_tokens_usd": 10.000
+					},
+					"cost_usd": 0.0015425,
+					"self_evaluation": {
+						"accuracy": 10,
+						"coherence_score": 9,
+						"confidence": 9,
+						"reasoning_clarity": 8,
+						"difficulty_of_interpreting_prompt": 1,
+						"comments": ""
+					}
+					"supervised-evaluations": [
+						{
+							"evaluator_name": "Koorosh Nobakhtfar",
+							"factual_correctness": 5,
+							"Reasoning_quality": 4,
+							"coherency_and_clarity": 5,
+							"completeness": 5,
+							"understanding_depth": 5,
+							"weighted_total": 95,
+							"comments": ""
+						}
+						{
+							"evaluator_name": "Kenan Çakılcı",
+							"factual_correctness": 4,
+							"Reasoning_quality": 4,
+							"coherency_and_clarity": 4,
+							"completeness": 4,
+							"understanding_depth": 3,
+							"weighted_total": 78,
+							"comments": ""
+						}
+					],
+				}
+			}
+		]
+	}
+}

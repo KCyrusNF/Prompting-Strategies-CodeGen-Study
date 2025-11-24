@@ -1,0 +1,2 @@
+To find the sum of digits of an integer, repeatedly extract each digit and add them up.
+Now think step by step and write a function sum_digits(n) that returns the sum of all digits.

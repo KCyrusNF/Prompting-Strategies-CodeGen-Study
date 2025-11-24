@@ -1,0 +1,27 @@
+Here’s a clear and correct implementation of the function you asked for:
+
+def rotate_list(nums, k):
+    """
+    Rotates the list 'nums' to the right by 'k' positions.
+    """
+    if not nums:
+        return []
+    
+    k = k % len(nums)  # handle cases where k > len(nums)
+    return nums[-k:] + nums[:-k]
+
+Example usage:
+nums = [1, 2, 3, 4, 5, 6, 7]
+k = 3
+rotated = rotate_list(nums, k)
+print(rotated)  # Output: [5, 6, 7, 1, 2, 3, 4]
+
+Explanation:
+
+nums[-k:] takes the last k elements of the list.
+
+nums[:-k] takes the remaining elements from the start up to the last k.
+
+Concatenating them gives the rotated list.
+
+Using k % len(nums) ensures the rotation works even if k is greater than the list length.

@@ -1,0 +1,24 @@
+Here’s a simple and efficient Python function to check if two strings are anagrams of each other:
+
+def are_anagrams(s1, s2):
+    # Normalize case and remove spaces (optional, depending on use case)
+    s1 = s1.replace(" ", "").lower()
+    s2 = s2.replace(" ", "").lower()
+    
+    # Check if sorted characters are equal
+    return sorted(s1) == sorted(s2)
+
+✅ Example usage:
+print(are_anagrams("listen", "silent"))    # True
+print(are_anagrams("hello", "world"))      # False
+print(are_anagrams("triangle", "integral"))# True
+print(are_anagrams("abc", "def"))          # False
+print(are_anagrams("aab", "aba"))          # True
+
+🔍 Explanation:
+
+replace(" ", "") removes spaces, so phrases like "Dormitory" and "Dirty room" would still work.
+
+lower() makes the comparison case-insensitive.
+
+Sorting both strings and comparing them works because anagrams have the exact same characters with the same counts.

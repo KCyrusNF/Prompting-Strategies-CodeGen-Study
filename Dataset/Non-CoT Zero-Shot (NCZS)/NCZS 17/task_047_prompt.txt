@@ -1,0 +1,1 @@
+"Write a Python function is_prime(n) that returns True if n is a prime number, False otherwise. Assume n is a positive integer greater than 1."

@@ -1,0 +1,12 @@
+Here’s the Python function that does exactly that:
+def count_positives(nums):
+    count = 0
+    for n in nums:
+        if n > 0:
+            count += 1
+    return count
+✅ Example runs:
+print(count_positives([1, -2, 3, 0, 5]))  # Output: 3
+print(count_positives([-1, -5, 0]))       # Output: 0
+print(count_positives([10, 2, 7]))        # Output: 3
+It iterates through the list nums, checks if each number is greater than 0, and increments a counter accordingly.

@@ -1,0 +1,12 @@
+Here’s the Python function that solves it:
+def count_vowels(s):
+    vowels = 'aeiou'
+    count = 0
+    for ch in s:
+        if ch in vowels:
+            count += 1
+    return count
+✅ Examples:
+print(count_vowels('hello'))  # Output: 2
+print(count_vowels('sky'))    # Output: 0
+print(count_vowels('aei'))    # Output: 3

@@ -1,0 +1,5 @@
+Think step by step.
+Start by assuming the maximum is a.
+If b is greater than the current maximum, update the maximum to b.
+If c is greater than the current maximum, update the maximum to c.
+Now write a function max_of_three(a, b, c) that returns the final maximum value.

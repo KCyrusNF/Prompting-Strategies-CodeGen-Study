@@ -1,0 +1,12 @@
+Example 1:
+Input: 32
+Reasoning: Subtract 32 from the input: 32 − 32 = 0, then multiply by (5/9): 0 × (5/9) = 0.0 → 0.0 °C
+Output: 0.0
+Example 2:
+Input: 212
+Reasoning: Subtract 32 from the input: 212 − 32 = 180, then multiply by (5/9): 180 × (5/9) = 100.0 → 100.0 °C
+Output: 100.0
+Now, solve step by step:
+First, subtract 32 from the Fahrenheit temperature.
+Then, multiply the result by 5/9 (or divide by 9 and multiply by 5).
+Finally, write a function to_celsius(f) that converts a temperature from Fahrenheit to Celsius and returns the result.

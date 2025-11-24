@@ -1,0 +1,1 @@
+Now write a python function average_of_list(nums) that returns the arithmetic mean of the list nums. Assume nums is non-empty.

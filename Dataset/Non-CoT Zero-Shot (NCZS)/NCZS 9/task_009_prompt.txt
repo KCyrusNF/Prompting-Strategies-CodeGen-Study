@@ -1,0 +1,1 @@
+Now write a function count_vowels(s) that returns how many characters in the string s are vowels. Treat only a, e, i, o, u as vowels.

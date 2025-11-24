@@ -1,0 +1,17 @@
+Here’s a clean and efficient Python function to compute the intersection of two lists without duplicates:
+def list_intersection(list1, list2):
+    """
+    Returns a list containing elements that appear in both input lists (no duplicates).
+    """
+    # Convert both lists to sets to remove duplicates and use set intersection
+    intersection = set(list1) & set(list2)
+    
+    # Convert back to a list (order not guaranteed)
+    return list(intersection)
+✅ Example usage:print(list_intersection([1, 2, 3, 4], [3, 4, 5, 6]))
+# Output: [3, 4]
+If you want to preserve the order of elements as they appear in list1, you can modify it slightly:
+def list_intersection(list1, list2):
+    seen = set()
+    list2_set = set(list2)
+    return [x for x in list1 if x in list2_set and not (x in seen or seen.add(x))]

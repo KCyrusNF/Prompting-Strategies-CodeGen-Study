@@ -1,0 +1,28 @@
+Here’s a Python function is_binary(s) that performs the checks as described in your reasoning:
+
+def is_binary(s):
+    # Iterate through each character in the string
+    for char in s:
+        # If the character is not '0' or '1', return False immediately
+        if char not in ('0', '1'):
+            return False
+    # If all characters are valid, return True
+    return True
+
+Explanation:
+
+Iteration over characters: The function loops through each character in the input string s.
+
+Character check: For each character, it checks if the character is either '0' or '1'.
+
+Early exit on invalid character: If an invalid character is found (i.e., one that is not '0' or '1'), the function immediately returns False.
+
+Return True if valid: If all characters pass the check, the function returns True.
+
+Example Usage:
+print(is_binary('1010'))  # Output: True
+print(is_binary('102'))   # Output: False
+print(is_binary(''))      # Output: True
+
+
+This will match the examples you provided. Would you like any additional adjustments or edge cases to be considered?

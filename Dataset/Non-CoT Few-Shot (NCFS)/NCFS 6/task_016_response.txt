@@ -1,0 +1,4 @@
+def average_of_list(nums):
+    total = sum(nums)
+    count = len(nums)
+    return total / count

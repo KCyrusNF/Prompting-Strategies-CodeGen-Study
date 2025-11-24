@@ -1,0 +1,51 @@
+Let's break it down step by step.
+
+Problem Breakdown:
+
+We are given two numbers: a and b.
+
+First, we subtract b from a.
+
+Then, we take the absolute value of the result to ensure it is always non-negative.
+
+Example Walkthroughs:
+
+Input: a = 8, b = 3
+
+Step 1: Subtract b from a:
+
+8
+−
+3
+=
+5
+8−3=5
+
+Step 2: Take the absolute value:
+
+∣
+5
+∣
+=
+5
+∣5∣=5 (already positive)
+
+Output: 5
+
+Solution Function:
+
+Here’s how we would write the function absolute_difference(a, b) to return the absolute difference:
+
+def absolute_difference(a, b):
+    return abs(a - b)
+
+Testing the Function:
+
+Let's walk through using the function with the provided input:
+
+# Test with a = 8, b = 3
+result = absolute_difference(8, 3)
+print(result)  # Expected Output: 5
+
+
+This approach ensures that no matter whether a is greater than b or vice versa, we always return the absolute value of the difference.

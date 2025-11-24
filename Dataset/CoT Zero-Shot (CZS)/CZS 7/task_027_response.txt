@@ -1,0 +1,23 @@
+To reverse a string, we can follow the steps you outlined. Here's a Python function that implements the logic:
+def reverse_string(s):
+    # Initialize an empty string to hold the reversed result
+    reversed_s = ""
+    
+    # Start from the end of the string and move towards the beginning
+    for i in range(len(s) - 1, -1, -1):
+        reversed_s += s[i]  # Collect each character in reverse order
+    
+    return reversed_s
+Explanation:
+
+We start by initializing an empty string reversed_s.
+
+We then loop through the original string s starting from the last index (i.e., len(s) - 1) down to index 0 (inclusive), moving backwards with each iteration (-1 step).
+
+In each iteration, we add the current character s[i] to the reversed_s string.
+
+Finally, we return the reversed string.
+
+Example Usage:
+print(reverse_string("hello"))  # Output: "olleh"
+Would you like to test this function with some specific examples?

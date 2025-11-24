@@ -1,0 +1,4 @@
+To get the absolute difference between two numbers a and b, first compute a - b.
+If the result is negative, flip its sign.
+Now solve step by step:
+How can we write a function absolute_difference(a, b) that returns the absolute difference between the two numbers?

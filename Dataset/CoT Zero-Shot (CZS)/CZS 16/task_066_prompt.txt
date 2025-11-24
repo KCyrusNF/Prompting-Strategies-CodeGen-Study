@@ -1,0 +1,8 @@
+Think step-by-step to compute the nth Fibonacci number iteratively.
+Write a Python function fibonacci(n) that returns the nth Fibonacci number using only the last two computed values (constant space).
+Define the convention: (F_0 = 0), (F_1 = 1).
+If (n) is 0 or 1, return (n) directly.
+Keep only two variables for the last two values (constant space): `prev` and `curr`.
+Iterate from 2 up to and including (n), updating the pair as:
+`prev, curr = curr, prev + curr`
+After the loop, return curr.

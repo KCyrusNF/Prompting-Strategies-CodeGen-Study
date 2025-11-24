@@ -1,0 +1,16 @@
+Here’s the Python function you asked for:
+def reverse_string(s):
+    return s[::-1]
+✅ Explanation:
+
+s[::-1] is Python’s slice syntax for reversing a sequence.
+
+The first colon : means we take the whole string.
+
+The second : introduces the step argument.
+
+-1 as the step means we move backward through the string.
+
+Example:
+print(reverse_string("hello"))  # Output: "olleh"
+print(reverse_string("Python")) # Output: "nohtyP"

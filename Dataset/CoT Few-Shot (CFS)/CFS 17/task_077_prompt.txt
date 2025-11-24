@@ -1,0 +1,53 @@
+Example 1:
+Input: n = 17
+Reasoning:
+
+Handle edge cases: if n < 2, return False (numbers less than 2 are not prime)
+Calculate the maximum divisor to check: √17 ≈ 4.12, round down to 4
+Check divisor 2: 17 % 2 = 1 (not 0) → 2 doesn't divide 17, continue
+Check divisor 3: 17 % 3 = 2 (not 0) → 3 doesn't divide 17, continue
+Check divisor 4: 17 % 4 = 1 (not 0) → 4 doesn't divide 17, continue
+Checked all divisors from 2 to 4, none divide 17 → 17 is prime
+Output: True
+
+Example 2:
+Input: n = 15
+Reasoning:
+
+Calculate the maximum divisor to check: √15 ≈ 3.87, round down to 3
+Check divisor 2: 15 % 2 = 1 (not 0) → 2 doesn't divide 15, continue
+Check divisor 3: 15 % 3 = 0 (equals 0) → 3 divides 15! Found a divisor → 15 is NOT prime
+Output: False
+
+Example 3:
+Input: n = 2
+Reasoning:
+
+Calculate the maximum divisor to check: √2 ≈ 1.41, round down to 1
+No divisors to check (range from 2 to 1 is empty)
+No divisors found → 2 is prime
+Output: True
+
+Example 4:
+Input: n = 1
+Reasoning:
+
+Edge case: 1 is not considered a prime number by definition
+Output: False
+
+Example 5:
+Input: n = 4
+Reasoning:
+
+Calculate the maximum divisor to check: √4 = 2
+Check divisor 2: 4 % 2 = 0 (equals 0) → 2 divides 4! Found a divisor → 4 is NOT prime
+Output: False
+
+Now, solve step by step:
+First, handle edge cases: if n is less than 2, return False (numbers less than 2 are not prime).
+Then, calculate the maximum divisor you need to check by taking the square root of n and rounding down.
+Next, loop through all potential divisors from 2 up to (and including) this maximum divisor.
+For each divisor, check if n is divisible by it using the modulo operator (n % divisor).
+If you find any divisor where n % divisor equals 0, immediately return False (n is not prime).
+Finally, if you complete the loop without finding any divisors, return True (n is prime).
+Write a Python function is_prime(n) that returns True if n is a prime number, False otherwise, by checking divisors from 2 to √n.

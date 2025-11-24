@@ -1,0 +1,35 @@
+Here’s how you can implement the function step by step as described:
+
+Step-by-step reasoning
+
+Define a function called filter_even that takes one parameter nums (a list of numbers).
+
+Create an empty list called even_nums to store the even numbers.
+
+Iterate through each number in nums.
+
+Check if the number is even using the condition num % 2 == 0.
+
+If true, append it to even_nums.
+
+After the loop, return the list even_nums.
+
+✅ Final Python code:
+def filter_even(nums):
+    even_nums = []              # Step 1: Initialize an empty list
+    for num in nums:            # Step 2: Iterate through each number
+        if num % 2 == 0:        # Step 3: Check if the number is even
+            even_nums.append(num)  # Step 4: Add even number to the list
+    return even_nums            # Step 5: Return the final list
+
+Example usage:
+numbers = [1, 2, 3, 4, 5, 6, 7, 8]
+print(filter_even(numbers))
+
+
+Output:
+
+[2, 4, 6, 8]
+
+
+Would you like me to show a more compact (one-line) version using list comprehension too?

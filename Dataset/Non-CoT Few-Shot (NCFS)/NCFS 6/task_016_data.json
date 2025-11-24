@@ -1,0 +1,73 @@
+{
+	"prompt_design": {
+		"task_metadata": {
+			"task_id": "task_016",
+			"task_title": "Average of List Function – Step-by-Step Implementation",
+			"task_description": "Explain and implement a Python function average_of_list(nums) that calculates the average value of elements in a list by summing all items and dividing by the count.",
+			"expected_output_format": "Step-by-step reasoning followed by Python function implementation.",
+			"difficulty_level": "2/10",
+			"topic_area": "Programming, Python, List Processing, Arithmetic Operations"
+		},
+		"prompt": [
+			{
+				"reasoning_style": "Non-CoT",
+				"example_context": "Few-Shot",
+				"prompt_text": "task_016_prompt.txt"
+				"num_examples": 2,
+				"prompt_tokens": 70
+			}
+		],
+		"runs": [
+			{
+				"response": {
+					"model_response": "task_016_response.txt",
+					"output_tokens": 24,
+					"compile_errors": 0,
+					"semantic_errors": 0
+				},
+				"experiment_record": {
+					"timestamp": "2025-10-27T00:00:00Z",
+					"model_name": "GPT-5 via ChatGPT Plus",
+					"token_counter_model": "tiktoken for gpt-4o",
+					"temperature": 0.0,
+					"cost_rates": {
+						"input_cost_per_1M_tokens_usd": 1.250,
+						"output_cost_per_1M_tokens_usd": 0.125,
+						"cached_input_cost_per_1M_tokens_usd": 10.000
+					},
+					"cost_usd": 0.0003275,
+					"self_evaluation": {
+						"accuracy": 10,
+						"coherence_score": 9,
+						"confidence": 10,
+						"reasoning_clarity": 9,
+						"difficulty_of_interpreting_prompt": 1,
+						"comments": "The implementation correctly applies Python’s built-in functions sum() and len() to compute the mean. The code is simple, clear, and efficient. Minor deduction for lack of example demonstration or edge case mention."
+					}
+					"supervised-evaluations": [
+						{
+							"evaluator_name": "Koorosh Nobakhtfar",
+							"factual_correctness": 5,
+							"Reasoning_quality": 1,
+							"coherency_and_clarity": 1,
+							"completeness": 3,
+							"understanding_depth": 3,
+							"weighted_total": 52,
+							"comments": ""
+						}
+						{
+							"evaluator_name": "Kenan Çakılcı",
+							"factual_correctness": 5,
+							"Reasoning_quality": 4,
+							"coherency_and_clarity": 4,
+							"completeness": 4,
+							"understanding_depth": 5,
+							"weighted_total": 87,
+							"comments": ""
+						}
+					],
+				}
+			}
+		]
+	}
+}

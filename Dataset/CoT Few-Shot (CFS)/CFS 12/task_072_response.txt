@@ -1,0 +1,45 @@
+Sure! Let's walk through the steps of solving this problem in Python:
+
+Step-by-Step Breakdown:
+
+Normalize the String:
+
+Convert all characters to lowercase to make the comparison case-insensitive.
+
+Reverse the String:
+
+Create a reversed version of the normalized string. In Python, you can reverse a string using slicing ([::-1]).
+
+Compare Original with Reversed:
+
+Compare the normalized string with its reversed version. If they are the same, the string is a palindrome.
+
+Python Code:
+def is_palindrome(s):
+    # Step 1: Normalize the string to lowercase
+    normalized_str = s.lower()
+    
+    # Step 2: Reverse the string
+    reversed_str = normalized_str[::-1]
+    
+    # Step 3: Compare the normalized string with the reversed string
+    if normalized_str == reversed_str:
+        return True
+    else:
+        return False
+
+Explanation:
+
+Normalize the string: s.lower() converts all characters of the string to lowercase, making the comparison case-insensitive.
+
+Reverse the string: normalized_str[::-1] creates a reversed version of the string using Python's slice notation.
+
+Comparison: If the original (normalized) string is the same as the reversed string, the function returns True, indicating that the string is a palindrome. Otherwise, it returns False.
+
+Example Usages:
+print(is_palindrome('RaceCar'))  # Output: True
+print(is_palindrome('hello'))    # Output: False
+print(is_palindrome('A'))        # Output: True
+
+
+This function should work for any input string, considering it in a case-insensitive way and handling all the steps for palindrome checking efficiently.

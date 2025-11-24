@@ -1,0 +1,50 @@
+Example 1:
+Input: 'book'
+Reasoning:
+
+Initialize empty dictionary: freq = {}
+Process 'b': Is 'b' in freq? No → Create freq['b'] = 1, freq = {'b': 1}
+Process 'o': Is 'o' in freq? No → Create freq['o'] = 1, freq = {'b': 1, 'o': 1}
+Process 'o': Is 'o' in freq? Yes → Increment freq['o'] = 1 + 1 = 2, freq = {'b': 1, 'o': 2}
+Process 'k': Is 'k' in freq? No → Create freq['k'] = 1, freq = {'b': 1, 'o': 2, 'k': 1}
+Output: {'b': 1, 'o': 2, 'k': 1}
+
+Example 2:
+Input: 'hello'
+Reasoning:
+
+Initialize empty dictionary: freq = {}
+Process 'h': Is 'h' in freq? No → Create freq['h'] = 1, freq = {'h': 1}
+Process 'e': Is 'e' in freq? No → Create freq['e'] = 1, freq = {'h': 1, 'e': 1}
+Process 'l': Is 'l' in freq? No → Create freq['l'] = 1, freq = {'h': 1, 'e': 1, 'l': 1}
+Process 'l': Is 'l' in freq? Yes → Increment freq['l'] = 1 + 1 = 2, freq = {'h': 1, 'e': 1, 'l': 2}
+Process 'o': Is 'o' in freq? No → Create freq['o'] = 1, freq = {'h': 1, 'e': 1, 'l': 2, 'o': 1}
+Output: {'h': 1, 'e': 1, 'l': 2, 'o': 1}
+
+Example 3:
+Input: ''
+Reasoning:
+
+Initialize empty dictionary: freq = {}
+No characters to process
+freq remains empty
+Output: {}
+
+Example 4:
+Input: 'aaa'
+Reasoning:
+
+Initialize empty dictionary: freq = {}
+Process 'a': Is 'a' in freq? No → Create freq['a'] = 1, freq = {'a': 1}
+Process 'a': Is 'a' in freq? Yes → Increment freq['a'] = 1 + 1 = 2, freq = {'a': 2}
+Process 'a': Is 'a' in freq? Yes → Increment freq['a'] = 2 + 1 = 3, freq = {'a': 3}
+Output: {'a': 3}
+
+Now, solve step by step:
+First, initialize an empty dictionary to store character frequencies.
+Then, loop through each character in the input string one by one.
+Next, for each character, check if it already exists as a key in the dictionary.
+If the character is NOT in the dictionary, create a new entry with the character as the key and set its value to 1.
+If the character IS already in the dictionary, increment its current count by 1.
+Finally, after processing all characters, return the frequency dictionary.
+Write a Python function char_frequency(s) that returns a dictionary mapping each character to its frequency count in the string.

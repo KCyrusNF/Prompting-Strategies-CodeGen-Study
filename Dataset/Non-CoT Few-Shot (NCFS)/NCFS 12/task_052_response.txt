@@ -1,0 +1,33 @@
+To implement the palindrome checker function is_palindrome(s), we need to consider several things based on your examples:
+
+Case Insensitivity: We need to ignore the case, so we should convert the string to lowercase.
+
+Spaces: We need to ignore spaces, so we'll remove all spaces from the string.
+
+Punctuation and Special Characters: If you want to ignore other non-alphanumeric characters (like commas, periods, etc.), we should remove them as well.
+
+Here’s the Python function:
+
+import re
+
+def is_palindrome(s):
+    # Remove spaces and non-alphanumeric characters and convert to lowercase
+    cleaned_s = re.sub(r'[^A-Za-z0-9]', '', s).lower()
+    
+    # Check if the string is the same forward and backward
+    return cleaned_s == cleaned_s[::-1]
+Explanation:
+
+re.sub(r'[^A-Za-z0-9]', '', s): This removes any character that is not an alphanumeric (letters or digits).
+
+.lower(): Converts the string to lowercase to make it case-insensitive.
+
+cleaned_s[::-1]: This is a Python trick to reverse the string.
+
+The function then compares the cleaned string to its reverse and returns True if they are the same, meaning the string is a palindrome.
+
+Testing the function:
+print(is_palindrome('racecar'))  # True
+print(is_palindrome('RaceCar'))  # True
+print(is_palindrome('hello'))    # False
+print(is_palindrome('A man a plan a canal Panama'))  # True

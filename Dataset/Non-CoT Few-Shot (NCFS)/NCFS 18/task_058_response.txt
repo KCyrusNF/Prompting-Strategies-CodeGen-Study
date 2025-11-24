@@ -1,0 +1,11 @@
+Here’s a simple and clear Python implementation of the char_frequency(s) function:
+def char_frequency(s):
+    freq = {}
+    for ch in s:
+        freq[ch] = freq.get(ch, 0) + 1
+    return freq
+✅ Example usage:
+print(char_frequency('hello'))       # {'h': 1, 'e': 1, 'l': 2, 'o': 1}
+print(char_frequency('aaa'))         # {'a': 3}
+print(char_frequency(''))            # {}
+print(char_frequency('programming')) # {'p': 1, 'r': 2, 'o': 1, 'g': 2, 'a': 1, 'm': 2, 'i': 1, 'n': 1}

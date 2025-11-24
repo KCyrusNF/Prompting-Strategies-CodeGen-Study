@@ -1,0 +1,20 @@
+Sure! Here's a clean Python implementation based on that reasoning:
+def average_of_list(nums):
+    total = 0
+    for value in nums:
+        total += value
+    count = len(nums)
+    return total / count
+Explanation:
+
+We start with total = 0.
+
+We loop through each value in nums and keep adding it to total.
+
+count is how many numbers are in the list.
+
+The mean (average) is total / count.
+
+Example:
+print(average_of_list([2, 4, 6]))   # 4.0
+print(average_of_list([10, 10, 10])) # 10.0

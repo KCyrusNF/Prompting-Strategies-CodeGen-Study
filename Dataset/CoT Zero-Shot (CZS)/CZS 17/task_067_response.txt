@@ -1,0 +1,48 @@
+Here's the Python function is_prime(n) that follows your step-by-step approach:
+
+import math
+
+def is_prime(n):
+    # Step 1: If n is less than 2, it's not prime
+    if n < 2:
+        return False
+    
+    # Step 2: If n is exactly 2, it's prime
+    if n == 2:
+        return True
+    
+    # Step 3: If n is even and greater than 2, it's not prime
+    if n % 2 == 0:
+        return False
+    
+    # Step 4: Compute the integer square root of n
+    sqrt_n = int(math.sqrt(n))
+    
+    # Step 5: Test odd divisors from 3 up to and including sqrt_n
+    for i in range(3, sqrt_n + 1, 2):
+        if n % i == 0:
+            return False
+    
+    # Step 6: If no divisors were found, n is prime
+    return True
+
+Explanation:
+
+Step 1: We check if n is less than 2 because any number less than 2 is not prime.
+
+Step 2: We handle the case for 2 directly because it's the only even prime number.
+
+Step 3: We eliminate any even number greater than 2 because they can't be prime.
+
+Step 4: We calculate the square root of n. Checking divisibility up to the square root is sufficient to determine if n is divisible by any number.
+
+Step 5: We test only odd divisors (since even numbers greater than 2 are already ruled out). The loop runs from 3 up to the integer square root of n.
+
+Step 6: If no divisor is found, n is prime.
+
+Example usage:
+print(is_prime(2))   # True
+print(is_prime(3))   # True
+print(is_prime(4))   # False
+print(is_prime(29))  # True
+print(is_prime(100)) # False

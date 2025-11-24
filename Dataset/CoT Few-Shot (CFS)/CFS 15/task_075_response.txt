@@ -1,0 +1,56 @@
+To solve the problem step by step, let's break down the solution and then write the function count_words(s):
+
+Steps:
+
+Use the split() method without arguments:
+
+This method will split the string into a list of words based on any whitespace (spaces, tabs, newlines, etc.). It also automatically handles leading/trailing whitespace, as well as multiple spaces between words.
+
+The result of split() will be a list of words:
+
+If the string is empty or only contains whitespace, the result will be an empty list.
+
+Count the number of elements in the resulting list:
+
+To count the words, you can use the len() function, which will return the number of elements in the list.
+
+Write a Python function that returns the count of words in the input string.
+
+Python Code:
+def count_words(s):
+    # Step 1: Split the string using split() (automatically handles extra spaces)
+    words = s.split()
+    
+    # Step 2: Return the number of words in the list
+    return len(words)
+
+Explanation of the code:
+
+s.split() splits the input string s into a list of words, removing extra spaces and empty strings.
+
+len(words) counts the number of elements (words) in the resulting list.
+
+Test Cases:
+# Test Case 1
+print(count_words('  Hello   world  '))  # Output: 2
+
+# Test Case 2
+print(count_words('Python is great'))    # Output: 3
+
+# Test Case 3
+print(count_words(''))                    # Output: 0
+
+# Test Case 4
+print(count_words('   '))                 # Output: 0
+
+Explanation of Test Results:
+
+In Test Case 1, the string has leading and trailing spaces, and multiple spaces between words. The output is 2 because split() removes extra spaces and counts only the words "Hello" and "world".
+
+In Test Case 2, there are no extra spaces, so split() splits at single spaces between words, and the output is 3.
+
+In Test Case 3, the string is empty, so split() returns an empty list, and the output is 0.
+
+In Test Case 4, the string consists only of spaces, so split() returns an empty list as well, and the output is 0.
+
+This should give you the correct word count for various types of input strings!

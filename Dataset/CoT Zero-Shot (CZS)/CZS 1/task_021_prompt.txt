@@ -1,0 +1,5 @@
+To count how many numbers are positive, think step by step:
+Go through each element in the list.
+If a number is greater than 0, increase your counter by 1.
+Finally, return this counter.
+Now write a function count_positives(nums) that returns how many elements in nums are strictly greater than 0.

@@ -1,0 +1,12 @@
+Here’s a simple Python implementation of list_intersection(list1, list2) that finds unique common elements between two lists (no duplicates, order doesn’t matter):
+def list_intersection(list1, list2):
+    return list(set(list1) & set(list2))
+✅ Examples
+print(list_intersection([1, 2, 3], [2, 3, 4]))  # [2, 3]
+print(list_intersection([1, 2, 2], [2, 2, 3]))  # [2]
+print(list_intersection([1, 2], [3, 4]))        # []
+print(list_intersection([5, 5, 5], [5]))        # [5]
+If you’d like the result in the same order as in list1, you can do this instead:
+def list_intersection(list1, list2):
+    return [x for x in list1 if x in list2 and list1.index(x) == list1.index(x)]
+—but the first version using sets is the most straightforward and efficient.

@@ -1,0 +1,22 @@
+You can implement the count_words(s) function like this:
+def count_words(s):
+    # Split the string on whitespace and count non-empty pieces
+    return len(s.split())
+✅ Explanation:
+
+str.split() with no arguments automatically:
+
+Splits on any whitespace (spaces, tabs, newlines, etc.)
+
+Ignores multiple consecutive spaces
+
+Ignores leading/trailing spaces
+
+So it naturally handles all your examples correctly.
+
+Examples:
+print(count_words("Hello world"))          # 2
+print(count_words("Python is great"))      # 3
+print(count_words(""))                     # 0
+print(count_words("  extra   spaces  "))   # 2
+All outputs match the expected results.

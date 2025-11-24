@@ -1,0 +1,17 @@
+Example 1:
+Input: 'RaceCar'
+Reasoning: Step 1: Convert to lowercase → 'racecar', Step 2: Reverse the string → 'racecar' reversed is 'racecar', Step 3: Compare original with reversed → 'racecar' == 'racecar' (yes)
+Output: True
+Example 2:
+Input: 'hello'
+Reasoning: Step 1: Convert to lowercase → 'hello', Step 2: Reverse the string → 'hello' reversed is 'olleh', Step 3: Compare original with reversed → 'hello' != 'olleh' (no)
+Output: False
+Example 3:
+Input: 'A'
+Reasoning: Step 1: Convert to lowercase → 'a', Step 2: Reverse the string → 'a' reversed is 'a', Step 3: Compare original with reversed → 'a' == 'a' (yes)
+Output: True
+Now, solve step by step:
+First, normalize the string by converting all characters to lowercase.
+Then, create a reversed version of the normalized string.
+Next, compare the normalized string with its reversed version.
+Finally, write a Python function is_palindrome(s) that returns True if the string is a palindrome (reads the same forwards and backwards), False otherwise.

@@ -1,0 +1,35 @@
+Here's the Python function list_intersection() that implements the step-by-step process to find the intersection of two lists:
+
+def list_intersection(list1, list2):
+    # Step 1: Convert both lists to sets to remove duplicates
+    set1 = set(list1)
+    set2 = set(list2)
+    
+    # Step 2: Find common elements (intersection) between both sets
+    intersection = set1 & set2  # '&' operator gives the intersection of two sets
+    
+    # Step 3: Convert the result back to a list
+    return list(intersection)
+
+# Test cases
+print(list_intersection([1, 2, 3], [2, 3, 4]))  # Output: [2, 3]
+print(list_intersection([1, 2, 2], [2, 2, 3]))  # Output: [2]
+print(list_intersection([1, 2], [3, 4]))        # Output: []
+
+Explanation:
+
+Step 1: We convert both lists to sets to remove duplicates. This ensures we're working with unique elements.
+
+Step 2: The intersection (&) operator is used to find elements that exist in both sets.
+
+Step 3: We convert the resulting set of common elements back to a list and return it.
+
+Test Output:
+
+For list_intersection([1, 2, 3], [2, 3, 4]), the result is [2, 3].
+
+For list_intersection([1, 2, 2], [2, 2, 3]), the result is [2].
+
+For list_intersection([1, 2], [3, 4]), the result is [] (no common elements).
+
+This function handles the intersection efficiently using sets! Let me know if you need further clarification or modifications.

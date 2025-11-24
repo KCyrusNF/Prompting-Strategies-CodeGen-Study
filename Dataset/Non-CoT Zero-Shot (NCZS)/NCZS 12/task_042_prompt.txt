@@ -1,0 +1,1 @@
+"Write a Python function is_palindrome(s) that returns True if the string s reads the same forwards and backwards (case-insensitive), False otherwise."

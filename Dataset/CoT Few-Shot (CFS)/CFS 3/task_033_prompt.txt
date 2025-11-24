@@ -1,0 +1,18 @@
+Example 1:
+Input: 2000
+Reasoning: Check if divisible by 400: 2000 % 400 = 0 (yes) → leap year
+Output: True
+Example 2:
+Input: 1900
+Reasoning: Check if divisible by 400: 1900 % 400 ≠ 0 (no), check if divisible by 100: 1900 % 100 = 0 (yes) → not a leap year
+Output: False
+Example 3:
+Input: 2024
+Reasoning: Check if divisible by 400: 2024 % 400 ≠ 0 (no), check if divisible by 100: 2024 % 100 ≠ 0 (no), check if divisible by 4: 2024 % 4 = 0 (yes) → leap year
+Output: True
+Now, solve step by step:
+First, check if the year is divisible by 400. If yes, it is a leap year.
+Then, if not divisible by 400, check if the year is divisible by 100. If yes, it is not a leap year.
+Next, if not divisible by 100, check if the year is divisible by 4. If yes, it is a leap year.
+Finally, if none of the above conditions are met, it is not a leap year.
+Write a function is_leap_year(year) that returns True if the given year is a leap year, False otherwise.

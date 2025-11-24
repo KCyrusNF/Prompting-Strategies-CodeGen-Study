@@ -1,0 +1,20 @@
+Here’s a simple and efficient implementation of the char_frequency(s) function in Python:
+def char_frequency(s):
+    freq = {}
+    for char in s:
+        freq[char] = freq.get(char, 0) + 1
+    return freq
+Example:
+print(char_frequency("hello"))
+Output:
+
+{'h': 1, 'e': 1, 'l': 2, 'o': 1}
+Explanation:
+
+The function iterates through each character in the string s.
+
+It uses dict.get(char, 0) to get the current count (or 0 if the character isn’t yet in the dictionary).
+
+Then it increments the count by 1.
+
+Finally, it returns the completed frequency dictionary.

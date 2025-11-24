@@ -1,0 +1,26 @@
+Here’s a simple and efficient implementation of the Fibonacci function in Python:
+def fibonacci(n):
+    if n < 0:
+        raise ValueError("n must be a non-negative integer")
+    elif n == 0:
+        return 0
+    elif n == 1:
+        return 1
+    
+    a, b = 0, 1
+    for _ in range(2, n + 1):
+        a, b = b, a + b
+    return b
+Example:
+print(fibonacci(0))  # Output: 0
+print(fibonacci(1))  # Output: 1
+print(fibonacci(6))  # Output: 8
+print(fibonacci(10)) # Output: 55
+✅ Explanation:
+
+
+It handles the first two Fibonacci numbers (0 and 1) directly.
+
+
+For larger n, it iteratively computes the sequence using two variables (a and b), which makes it both fast and memory efficient (O(1) space, O(n) time).
+

@@ -1,0 +1,73 @@
+{
+	"prompt_design": {
+		"task_metadata": {
+			"task_id": "task_012",
+			"task_title": "Convert Fahrenheit to Celsius – Example-Based",
+			"task_description": "Write a Python function to_celsius(f) that converts Fahrenheit to Celsius using the formula (f - 32) × 5 / 9. Include example input/output pairs to clarify expected results.",
+			"expected_output_format": "Python function definition with example input/output pairs.",
+			"difficulty_level": "2/10",
+			"topic_area": "Programming, Python, Arithmetic Operations"
+		},
+		"prompt": [
+			{
+				"reasoning_style": "Non-CoT",
+				"example_context": "Few-Shot",
+				"prompt_text": "task_012_prompt.txt",
+				"num_examples": 2,
+				"prompt_tokens": 59
+			}
+		],
+		"runs": [
+			{
+				"response": {
+					"model_response": "task_012_response.txt"
+					"output_tokens": 88,
+					"compile_errors": 0,
+					"semantic_errors": 0
+				},
+				"experiment_record": {
+					"timestamp": "2025-10-27T00:00:00Z",
+					"model_name": "GPT-5 via ChatGPT Plus",
+					"token_counter_model": "tiktoken for gpt-4o",
+					"temperature": 0.0,
+					"cost_rates": {
+						"input_cost_per_1M_tokens_usd": 1.250,
+						"output_cost_per_1M_tokens_usd": 0.125,
+						"cached_input_cost_per_1M_tokens_usd": 10.000
+					},
+					"cost_usd": 0.00095375,
+					"self_evaluation": {
+						"accuracy": 10,
+						"coherence_score": 10,
+						"confidence": 10,
+						"reasoning_clarity": 9,
+						"difficulty_of_interpreting_prompt": 2,
+						"comments": "The function perfectly implements the required formula and provides accurate outputs for the examples. Slight deduction on reasoning clarity since it directly applies the formula without elaboration, which is appropriate for few-shot non-CoT."
+					}
+					"supervised-evaluations": [
+						{
+							"evaluator_name": "Koorosh Nobakhtfar",
+							"factual_correctness": 5,
+							"Reasoning_quality": 2,
+							"coherency_and_clarity": 3,
+							"completeness": 4,
+							"understanding_depth": 5,
+							"weighted_total": 73,
+							"comments": ""
+						}
+						{
+							"evaluator_name": "Kenan Çakılcı",
+							"factual_correctness": 5,
+							"Reasoning_quality": 4,
+							"coherency_and_clarity": 5,
+							"completeness": 4,
+							"understanding_depth": 4,
+							"weighted_total": 89,
+							"comments": ""
+						}
+					],
+				}
+			}
+		]
+	}
+}

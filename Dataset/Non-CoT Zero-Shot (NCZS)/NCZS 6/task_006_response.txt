@@ -1,0 +1,13 @@
+Here’s the function you asked for
+def average_of_list(nums):
+    return sum(nums) / len(nums)
+✅ Explanation:
+
+sum(nums) adds up all elements in the list.
+
+len(nums) gives the total number of elements.
+
+Dividing the total sum by the count gives the arithmetic mean (average).
+
+Example:
+print(average_of_list([2, 4, 6, 8]))  # Output: 5.0

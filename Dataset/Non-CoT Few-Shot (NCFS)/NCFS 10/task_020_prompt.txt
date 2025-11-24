@@ -1,0 +1,7 @@
+Example 1:
+Input: a = 10, b = 6 → Output: 4
+Example 2:
+Input: a = 6, b = 10 → Output: 4
+Example 3:
+Input: a = 5, b = 5 → Output: 0
+Now write a python function absolute_difference(a, b) that returns |a - b|.

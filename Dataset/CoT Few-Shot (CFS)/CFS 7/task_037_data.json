@@ -1,0 +1,73 @@
+{
+	"prompt_design": {
+		"task_metadata": {
+			"task_id": "task_037",
+			"task_title": "Reverse String Function – Full Step-by-Step Reasoning",
+			"task_description": "Write a Python function reverse_string(s) that reverses the given string. Include reasoning steps explaining how to iterate through the string backwards and collect characters in reverse order.",
+			"expected_output_format": "Step-by-step reasoning explanation followed by the complete Python implementation and examples.",
+			"difficulty_level": "3/10",
+			"topic_area": "Programming, Python, String Manipulation"
+		},
+		"prompt": [
+			{
+				"reasoning_style": "CoT",
+				"example_context": "Few-Shot"
+				"prompt_text": "task_037_prompt.txt"
+				"num_examples": 2,
+				"prompt_tokens": 110
+			}
+		],
+		"runs": [
+			{
+				"response": {
+					"model_response": "task_037_response.txt"
+					"output_tokens": 242,
+					"compile_errors": 0,
+					"semantic_errors": 0
+				},
+				"experiment_record": {
+					"timestamp": "2025-10-27T00:00:00Z",
+					"model_name": "GPT-5 via ChatGPT Plus",
+					"token_counter_model": "tiktoken for gpt-4o",
+					"temperature": 0.0,
+					"cost_rates": {
+						"input_cost_per_1M_tokens_usd": 1.250,
+						"output_cost_per_1M_tokens_usd": 0.125,
+						"cached_input_cost_per_1M_tokens_usd": 10.000
+					},
+					"cost_usd": 0.0025575,
+					"self_evaluation": {
+						"accuracy": 10,
+						"coherence_score": 9,
+						"confidence": 9,
+						"reasoning_clarity": 9,
+						"difficulty_of_interpreting_prompt": 3,
+						"comments": "The function and reasoning are both technically correct and complete. Minor stylistic redundancy in example explanations slightly lowers coherence. The logic flow is clear and stepwise, suitable for educational use."
+					}
+					"supervised-evaluations": [
+						{
+							"evaluator_name": "Koorosh Nobakhtfar",
+							"factual_correctness": 5,
+							"Reasoning_quality": 5,
+							"coherency_and_clarity": 5,
+							"completeness": 5,
+							"understanding_depth": 5,
+							"weighted_total": 100,
+							"comments": ""
+						}
+						{
+							"evaluator_name": "Kenan Çakılcı",
+							"factual_correctness": 5,
+							"Reasoning_quality": 5,
+							"coherency_and_clarity": 5,
+							"completeness": 5,
+							"understanding_depth": 5,
+							"weighted_total": 100,
+							"comments": ""
+						}
+					],
+				}
+			}
+		]
+	}
+}

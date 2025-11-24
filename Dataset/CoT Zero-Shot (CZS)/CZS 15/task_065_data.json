@@ -1,0 +1,73 @@
+{
+	"prompt_design": {
+		"task_metadata": {
+			"task_id": "task_065",
+			"task_title": "Count Words in a Sentence",
+			"task_description": "Write a Python function count_words(s) that returns the number of words in the given string s using split() with no arguments, ensuring multiple spaces and tabs are handled correctly.",
+			"expected_output_format": "Integer (number of words)",
+			"difficulty_level": "2/10",
+			"topic_area": "Programming, Python, Strings, Text Processing"
+		},
+		"prompt": [
+			{
+				"reasoning_style": "CoT",
+				"example_context": "Zero-Shot",
+				"prompt_text": "task_065_prompt.txt"
+				"num_examples": 0,
+				"prompt_tokens": 74
+			}
+		],
+		"runs": [
+			{
+				"response": {
+					"model_response": "task_065_response.txt"
+					"output_tokens": 258,
+					"compile_errors": 0,
+					"semantic_errors": 0
+				},
+				"experiment_record": {
+					"timestamp": "2025-11-05T00:00:00Z",
+					"model_name": "GPT-5 via ChatGPT Plus",
+					"token_counter_model": "tiktoken for gpt-4o",
+					"temperature": 0.0,
+					"cost_rates": {
+						"input_cost_per_1M_tokens_usd": 1.250,
+						"output_cost_per_1M_tokens_usd": 0.125,
+						"cached_input_cost_per_1M_tokens_usd": 10.000
+					},
+					"cost_usd": 0.0026725,
+					"self_evaluation": {
+						"accuracy": 10,
+						"coherence_score": 10,
+						"confidence": 10,
+						"reasoning_clarity": 10,
+						"difficulty_of_interpreting_prompt": 2,
+						"comments": ""
+					}
+					"supervised-evaluations": [
+						{
+							"evaluator_name": "Koorosh Nobakhtfar",
+							"factual_correctness": 5,
+							"Reasoning_quality": 5,
+							"coherency_and_clarity": 4,
+							"completeness": 5,
+							"understanding_depth": 5,
+							"weighted_total": 96,
+							"comments": ""
+						}
+						{
+							"evaluator_name": "Kenan Çakılcı",
+							"factual_correctness": 5,
+							"Reasoning_quality": 4,
+							"coherency_and_clarity": 4,
+							"completeness": 4,
+							"understanding_depth": 4,
+							"weighted_total": 85,
+							"comments": ""
+						}
+					],
+				}
+			}
+		]
+	}
+}

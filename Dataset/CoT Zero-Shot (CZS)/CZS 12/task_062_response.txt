@@ -1,0 +1,38 @@
+You're on the right track! Let's break it down step by step and then write the function. Here's the plan:
+
+Steps to Check if a String is a Palindrome:
+
+Normalize the input:
+
+Remove all non-alphanumeric characters (e.g., spaces, punctuation).
+
+Convert all letters to lowercase to ensure case-insensitivity.
+
+Compare the normalized string to its reverse:
+
+If the string and its reverse are identical, then it's a palindrome.
+
+Otherwise, it's not.
+
+Code Implementation:
+import re
+
+def is_palindrome(s):
+    # Normalize the input by removing non-alphanumeric characters and converting to lowercase
+    normalized = ''.join(char.lower() for char in s if char.isalnum())
+    
+    # Compare the normalized string with its reverse
+    return normalized == normalized[::-1]
+
+Explanation:
+
+Normalization: We use a list comprehension to loop over each character in the string s. We filter out non-alphanumeric characters using char.isalnum() and convert each remaining character to lowercase using char.lower().
+
+Palindrome Check: The string is compared with its reverse (normalized[::-1]), which creates a reversed version of the string.
+
+Example Usage:
+print(is_palindrome("A man, a plan, a canal: Panama"))  # True
+print(is_palindrome("race a car"))  # False
+
+
+This function will correctly identify whether a string is a palindrome by following the steps you outlined. Let me know if you'd like to explore anything further!

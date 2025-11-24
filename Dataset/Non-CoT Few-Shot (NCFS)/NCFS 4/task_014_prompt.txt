@@ -1,0 +1,7 @@
+Example 1:
+Input: 123 → Output: 6
+Example 2:
+Input: 405 → Output: 9
+Example 3:
+Input: 0 → Output: 0
+Now write a function sum_digits(n) that calculates the sum of all digits in the number n.

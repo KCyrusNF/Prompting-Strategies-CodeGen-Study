@@ -1,0 +1,73 @@
+{
+	"prompt_design": {
+		"task_metadata": {
+			"task_id": "task_017",
+			"task_title": "Reverse String Function",
+			"task_description": "Write a Python function reverse_string(s) that returns the input string in reverse order.",
+			"expected_output_format": "Python function definition followed by explanation and examples.",
+			"difficulty_level": "2/10",
+			"topic_area": "Programming, Python, String Manipulation"
+		},
+		"prompt": [
+			{
+				"reasoning_style": "Non-CoT",
+				"example_context": "Few-Shot",
+				"prompt_text": "task_017_prompt.txt"
+				"num_examples": 3,
+				"prompt_tokens": 65
+			}
+		],
+		"runs": [
+			{
+				"response": {
+					"model_response": "task_017_response.txt"
+					"output_tokens": 88,
+					"compile_errors": 0,
+					"semantic_errors": 0
+				},
+				"experiment_record": {
+					"timestamp": "2025-10-27T00:00:00Z",
+					"model_name": "GPT-5 via ChatGPT Plus",
+					"token_counter_model": "tiktoken for gpt-4o",
+					"temperature": 0.0,
+					"cost_rates": {
+						"input_cost_per_1M_tokens_usd": 1.250,
+						"output_cost_per_1M_tokens_usd": 0.125,
+						"cached_input_cost_per_1M_tokens_usd": 10.000
+					},
+					"cost_usd": 0.00096125,
+					"self_evaluation": {
+						"accuracy": 10,
+						"coherence_score": 9,
+						"confidence": 9,
+						"reasoning_clarity": 8,
+						"difficulty_of_interpreting_prompt": 2,
+						"comments": "The code is fully correct and runs without errors. Explanation is clear and example-supported. Minor stylistic redundancy (use of emoji and informal tone) slightly reduces clarity but does not affect technical quality."
+					}
+					"supervised-evaluations": [
+						{
+							"evaluator_name": "Koorosh Nobakhtfar",
+							"factual_correctness": 5,
+							"Reasoning_quality": 3,
+							"coherency_and_clarity": 4,
+							"completeness": 5,
+							"understanding_depth": 5,
+							"weighted_total": 86,
+							"comments": ""
+						}
+						{
+							"evaluator_name": "Kenan Çakılcı",
+							"factual_correctness": 5,
+							"Reasoning_quality": 4,
+							"coherency_and_clarity": 4,
+							"completeness": 4,
+							"understanding_depth": 5,
+							"weighted_total": 87,
+							"comments": ""
+						}
+					],
+				}
+			}
+		]
+	}
+}

@@ -1,0 +1,38 @@
+To compute the nth Fibonacci number iteratively with constant space, you can follow these steps as described. The idea is to maintain only two variables to store the last two computed Fibonacci numbers. Here's the Python function to do that:
+
+def fibonacci(n):
+    # Base cases
+    if n == 0:
+        return 0
+    elif n == 1:
+        return 1
+    
+    # Initial values for F_0 and F_1
+    prev, curr = 0, 1
+    
+    # Start iterating from 2 up to n
+    for _ in range(2, n + 1):
+        prev, curr = curr, prev + curr
+    
+    # After the loop, curr contains F_n
+    return curr
+
+Explanation:
+
+Base Case Handling: If n is 0, return 0. If n is 1, return 1.
+
+Variable Initialization: Initialize prev to 0 (F_0) and curr to 1 (F_1).
+
+Iterative Update: For each step from 2 to n, update prev and curr to the previous two Fibonacci numbers using the formula prev, curr = curr, prev + curr.
+
+Return: After the loop, curr will contain the nth Fibonacci number, which is returned.
+
+Example:
+# Test the function
+print(fibonacci(0))  # Output: 0
+print(fibonacci(1))  # Output: 1
+print(fibonacci(5))  # Output: 5
+print(fibonacci(10)) # Output: 55
+
+
+This approach uses constant space because we only store two variables (prev and curr), and we update them iteratively without needing additional space for an entire list of Fibonacci numbers. The time complexity of this function is O(n) since it performs a loop n - 1 times.

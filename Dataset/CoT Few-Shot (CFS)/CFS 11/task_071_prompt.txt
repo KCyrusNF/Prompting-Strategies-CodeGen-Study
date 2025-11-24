@@ -1,0 +1,18 @@
+Example 1:
+Input: '1010'
+Reasoning: Check each character: '1' is 0 or 1? (yes ✓), '0' is 0 or 1? (yes ✓), '1' is 0 or 1? (yes ✓), '0' is 0 or 1? (yes ✓) → all characters are valid
+Output: True
+Example 2:
+Input: '102'
+Reasoning: Check each character: '1' is 0 or 1? (yes ✓), '0' is 0 or 1? (yes ✓), '2' is 0 or 1? (no ✗) → found an invalid character, stop checking
+Output: False
+Example 3:
+Input: ''
+Reasoning: Empty string has no characters to check → can be considered valid (or handle based on requirements)
+Output: True
+Now, solve step by step:
+First, go through each character in the string one by one.
+Then, for each character, check if it is either '0' or '1'.
+Next, if you find any character that is not '0' or '1', immediately return False.
+Finally, if all characters pass the validation, return True.
+Write a Python function is_binary(s) that returns True if the string contains only '0' and '1' characters, False otherwise.

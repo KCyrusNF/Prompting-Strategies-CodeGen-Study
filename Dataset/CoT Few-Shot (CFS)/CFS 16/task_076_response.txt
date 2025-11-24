@@ -1,0 +1,56 @@
+Here's the Python function fibonacci(n) based on your iterative two-variable approach:
+
+def fibonacci(n):
+    # Handle the base cases
+    if n == 0:
+        return 0
+    elif n == 1:
+        return 1
+    
+    # Initialize the first two Fibonacci numbers
+    a, b = 0, 1
+    
+    # Iterate to calculate the nth Fibonacci number
+    for position in range(2, n + 1):
+        # Calculate the next Fibonacci number
+        next_fib = a + b
+        
+        # Update a and b for the next iteration
+        a = b
+        b = next_fib
+    
+    return b
+
+Explanation of the Code:
+
+Base Cases: If n is 0, return 0, and if n is 1, return 1. This handles the first two Fibonacci numbers directly.
+
+Initialization: We initialize a = 0 and b = 1 to represent fib(0) and fib(1).
+
+Loop: The loop runs from position 2 up to n. In each iteration:
+
+We compute the next Fibonacci number by summing a and b.
+
+We then update a to the previous value of b, and update b to the newly computed Fibonacci number.
+
+Return the result: After the loop, b will hold the value of fib(n).
+
+Test Cases:
+
+Example 1: n = 6
+
+fibonacci(6) will return 8.
+
+Example 2: n = 0
+
+fibonacci(0) will return 0.
+
+Example 3: n = 1
+
+fibonacci(1) will return 1.
+
+Example 4: n = 3
+
+fibonacci(3) will return 2.
+
+Let me know if you'd like any more clarifications or test cases!

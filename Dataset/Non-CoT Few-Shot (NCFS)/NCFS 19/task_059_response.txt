@@ -1,0 +1,18 @@
+Here’s a clean and efficient Python function to rotate a list to the right by k positions:
+def rotate_list(nums, k):
+    if not nums:
+        return nums
+    k = k % len(nums)  # Handle rotations larger than the list length
+    return nums[-k:] + nums[:-k]
+
+✅ Examples:
+print(rotate_list([1, 2, 3, 4, 5], 2))  # [4, 5, 1, 2, 3]
+print(rotate_list([1, 2, 3], 1))        # [3, 1, 2]
+print(rotate_list([1, 2], 5))           # [2, 1]
+print(rotate_list([1, 2, 3, 4], 0))     # [1, 2, 3, 4]
+
+This works by slicing the list:
+
+nums[-k:] → the last k elements (the ones that move to the front)
+
+nums[:-k] → the remaining elements (that move to the back)

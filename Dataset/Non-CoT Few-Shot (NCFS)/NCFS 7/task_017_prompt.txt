@@ -1,0 +1,7 @@
+Example 1:
+Input: 'abc' → Output: 'cba'
+Example 2:
+Input: 'race' → Output: 'ecar'
+Example 3:
+Input: '' → Output: ''
+Now write a function reverse_string(s) that returns a new string with the characters of s in reverse order.

@@ -1,0 +1,56 @@
+Example 1:
+Input: list1 = [1, 2, 3], list2 = [2, 3, 4]
+Reasoning:
+
+Step 1: Convert both lists to sets → set1 = {1, 2, 3}, set2 = {2, 3, 4}
+Step 2: Find common elements:
+
+Check 1: 1 in set1? (yes), 1 in set2? (no) → not common
+Check 2: 2 in set1? (yes), 2 in set2? (yes) → common, include it
+Check 3: 3 in set1? (yes), 3 in set2? (yes) → common, include it
+Check 4: 4 in set1? (no) → not common
+Intersection: {2, 3}
+
+
+Step 3: Convert the result back to a list → [2, 3]
+Output: [2, 3]
+
+Example 2:
+Input: list1 = [1, 2, 2], list2 = [2, 2, 3]
+Reasoning:
+
+Step 1: Convert both lists to sets (removes duplicates) → set1 = {1, 2}, set2 = {2, 3}
+Step 2: Find common elements:
+
+Check 1: 1 in set1? (yes), 1 in set2? (no) → not common
+Check 2: 2 in set1? (yes), 2 in set2? (yes) → common, include it
+Check 3: 3 in set1? (no) → not common
+Intersection: {2}
+
+
+Step 3: Convert the result back to a list → [2]
+Output: [2]
+
+Example 3:
+Input: list1 = [1, 2], list2 = [3, 4]
+Reasoning:
+
+Step 1: Convert both lists to sets → set1 = {1, 2}, set2 = {3, 4}
+Step 2: Find common elements:
+
+Check 1: 1 in set2? (no) → not common
+Check 2: 2 in set2? (no) → not common
+Check 3: 3 in set1? (no) → not common
+Check 4: 4 in set1? (no) → not common
+Intersection: {} (empty)
+
+
+Step 3: Convert the result back to a list → []
+Output: []
+
+Now, solve step by step:
+First, convert both input lists to sets to remove any duplicate values and enable efficient lookups.
+Then, find the intersection by identifying elements that exist in both sets.
+Next, for each element in the first set, check if it also exists in the second set, and collect all common elements.
+Finally, convert the resulting set of common elements back to a list and return it.
+Write a Python function list_intersection(list1, list2) that returns a list of elements that appear in both input lists.

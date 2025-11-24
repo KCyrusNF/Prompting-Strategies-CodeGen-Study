@@ -1,0 +1,28 @@
+Here’s how you can write the function step by step 👇
+
+Step-by-step reasoning:
+
+Start with a counter set to 0.
+
+Loop through each number in the list.
+
+For each number, check if it’s greater than 0.
+
+If it is, increase the counter by 1.
+
+After the loop, return the counter.
+
+✅ Final function:
+def count_positives(nums):
+    count = 0
+    for n in nums:
+        if n > 0:
+            count += 1
+    return count
+
+🧪 Example tests:
+print(count_positives([1, -2, 3, 0]))  # Output: 2
+print(count_positives([-5, -1, 0]))    # Output: 0
+
+
+Would you like me to show a shorter (one-line) version too, using Python’s built-in functions?

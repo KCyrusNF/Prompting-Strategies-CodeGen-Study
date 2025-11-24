@@ -1,0 +1,73 @@
+{
+	"prompt_design": {
+		"task_metadata": {
+			"task_id": "task_071",
+			"task_title": "Check if a String is Binary",
+			"task_description": "Write a Python function is_binary(s) that checks whether a string contains only '0' and '1' characters.",
+			"expected_output_format": "Boolean (True or False)",
+			"difficulty_level": "2/10",
+			"topic_area": "Programming, Python, String Validation"
+		},
+		"prompt": [
+			{
+				"reasoning_style": "CoT",
+				"example_context": "Few-Shot",
+				"prompt_text": "task_071_prompt.txt"
+				"num_examples": 3,
+				"prompt_tokens": 287
+			}
+		],
+		"runs": [
+			{
+				"response": {
+					"model_response": "task_071_response.txt"
+					"output_tokens": 237,
+					"compile_errors": 0,
+					"semantic_errors": 0
+				},
+				"experiment_record": {
+					"timestamp": "2025-11-02T00:00:00Z",
+					"model_name": "GPT-5 via ChatGPT Plus",
+					"token_counter_model": "tiktoken for gpt-4o",
+					"temperature": 0.0,
+					"cost_rates": {
+						"input_cost_per_1M_tokens_usd": 1.250,
+						"output_cost_per_1M_tokens_usd": 0.125,
+						"cached_input_cost_per_1M_tokens_usd": 10.000
+					},
+					"cost_usd": 0.00272875,
+					"self_evaluation": {
+						"accuracy": 10,
+						"coherence_score": 10,
+						"confidence": 9,
+						"reasoning_clarity": 10,
+						"difficulty_of_interpreting_prompt": 2,
+						"comments": ""
+					}
+					"supervised-evaluations": [
+						{
+							"evaluator_name": "Koorosh Nobakhtfar",
+							"factual_correctness": 4,
+							"Reasoning_quality": 4,
+							"coherency_and_clarity": 5,
+							"completeness": 5,
+							"understanding_depth": 5,
+							"weighted_total": 90,
+							"comments": ""
+						}
+						{
+							"evaluator_name": "Kenan Çakılcı",
+							"factual_correctness": 5,
+							"Reasoning_quality": 5,
+							"coherency_and_clarity": 4,
+							"completeness": 5,
+							"understanding_depth": 5,
+							"weighted_total": 96,
+							"comments": ""
+						}
+					],
+				}
+			}
+		]
+	}
+}

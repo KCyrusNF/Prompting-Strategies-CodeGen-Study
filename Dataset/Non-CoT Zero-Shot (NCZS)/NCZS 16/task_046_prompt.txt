@@ -1,0 +1,1 @@
+"Write a Python function fibonacci(n) that returns the nth Fibonacci number. The sequence starts with 0, 1, 1, 2, 3, 5, 8..."

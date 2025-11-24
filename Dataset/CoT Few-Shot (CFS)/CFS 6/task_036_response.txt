@@ -1,0 +1,30 @@
+Sure! Here's a clear step-by-step solution and the function.
+
+Step-by-step reasoning process:
+
+We take the list nums.
+
+We compute the total sum of its elements.
+
+We count how many elements are in the list.
+
+We divide the total sum by that count.
+
+We return that result.
+
+Python implementation:
+def average_of_list(nums):
+    total = 0
+    for value in nums:
+        total += value
+    length = 0
+    for _ in nums:
+        length += 1
+    return total / length
+Explanation:
+
+The first loop calculates the sum manually (stored in total).
+
+The second loop counts how many items are in the list (stored in length).
+
+Then we return total / length, which is the arithmetic mean.

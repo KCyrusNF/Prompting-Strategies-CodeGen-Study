@@ -1,0 +1,3 @@
+To reverse a string, think step by step:
+Start from the end of the string and move toward the beginning, collecting each character in reverse order.
+Now write a function reverse_string(s) that returns the reversed version of the input string.

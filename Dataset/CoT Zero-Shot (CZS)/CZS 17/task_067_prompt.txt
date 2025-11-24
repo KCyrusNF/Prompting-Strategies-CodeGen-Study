@@ -1,0 +1,8 @@
+Write a Python function is_prime(n) that checks whether a number is prime.
+Think step by step;
+If n is less than 2, return False.
+If n equals 2, return True.
+If n is even and greater than 2, return False.
+Compute the integer square root of n.
+Test odd divisors from 3 up to and including that square root; if any divides n, return False.
+If no divisors are found, return True.

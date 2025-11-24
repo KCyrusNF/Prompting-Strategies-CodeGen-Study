@@ -1,0 +1,73 @@
+{
+	"prompt_design": {
+		"task_metadata": {
+			"task_id": "task_003",
+			"task_title": "Leap Year Checker Function",
+			"task_description": "Write a Python function is_leap_year(year) that returns True if the given year is a leap year and False otherwise, following leap year divisibility rules.",
+			"expected_output_format": "Python function definition with explanation and test examples.",
+			"difficulty_level": "4/10",
+			"topic_area": "Programming, Python, Conditionals, Date Computation"
+		},
+		"prompt": [
+			{
+				"reasoning_style": "Non-CoT",
+				"example_context": "Zero-Shot",
+				"prompt_text": "task_003_prompt.txt",
+				"num_examples": 0,
+				"prompt_tokens": 25
+			}
+		],
+		"runs": [
+			{
+				"response": {
+					"model_response": "task_003_response.txt"
+					"output_tokens": 146,
+					"compile_errors": 0,
+					"semantic_errors": 0
+				},
+				"experiment_record": {
+					"timestamp": "2025-10-27T00:00:00Z",
+					"model_name": "GPT-5 via ChatGPT Plus",
+					"token_counter_model": "tiktoken for gpt-4o",
+					"temperature": 0.0,
+					"cost_rates": {
+						"input_cost_per_1M_tokens_usd": 1.250,
+						"output_cost_per_1M_tokens_usd": 0.125,
+						"cached_input_cost_per_1M_tokens_usd": 10.000
+					},
+					"cost_usd": 0.00149125,
+					"self_evaluation": {
+						"accuracy": 10,
+						"coherence_score": 10,
+						"confidence": 10,
+						"reasoning_clarity": 9,
+						"difficulty_of_interpreting_prompt": 3,
+						"comments": "The implementation precisely follows leap year rules using correct logical conditions. The code is syntactically valid and outputs expected results for all given test cases. Slightly reduced clarity rating due to lack of inline explanation for edge cases."
+					}
+					"supervised-evaluations": [
+						{
+							"evaluator_name": "Koorosh Nobakhtfar",
+							"factual_correctness": 5,
+							"Reasoning_quality": 4,
+							"coherency_and_clarity": 4,
+							"completeness": 4,
+							"understanding_depth": 5,
+							"weighted_total": 87,
+							"comments": ""
+						}
+						{
+							"evaluator_name": "Kenan Çakılcı",
+							"factual_correctness": 5,
+							"Reasoning_quality": 3,
+							"coherency_and_clarity": 5,
+							"completeness": 4,
+							"understanding_depth": 4,
+							"weighted_total": 84,
+							"comments": ""
+						}
+					],
+				}
+			}
+		]
+	}
+}

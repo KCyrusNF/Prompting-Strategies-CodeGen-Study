@@ -1,0 +1,66 @@
+Sure! Let's break down the steps and implement the function factorial_iter(n) step by step.
+Steps:
+
+
+Initialize the result variable: We initialize a variable called result to 1. This is because multiplying by 1 does not change the value of any number.
+
+
+Loop through integers from 1 to n: We will loop through each integer from 1 to n (inclusive). In each iteration of the loop, we will multiply the current value of result by the loop index i.
+
+
+Return the result: After the loop finishes, the value of result will be the factorial of n, and we return it.
+
+
+Python Code:
+def factorial_iter(n):
+    result = 1  # Start with 1 since multiplying by 1 doesn't change the value
+    for i in range(1, n + 1):  # Loop from 1 to n (inclusive)
+        result *= i  # Multiply result by i in each iteration
+    return result
+
+Example Walkthrough:
+
+
+Input: 4
+
+
+Initialize result = 1.
+
+
+Loop through the numbers 1 to 4:
+
+
+i = 1: result = 1 * 1 = 1
+
+
+i = 2: result = 1 * 2 = 2
+
+
+i = 3: result = 2 * 3 = 6
+
+
+i = 4: result = 6 * 4 = 24
+
+
+
+
+Final result: 24.
+
+
+
+
+Input: 0
+
+
+Initialize result = 1.
+
+
+Since the loop doesn't run (as range(1, 1) is empty), the result remains 1.
+
+
+Return 1, which is the factorial of 0 by definition.
+
+
+
+
+Let me know if you'd like to test the function with some specific inputs!

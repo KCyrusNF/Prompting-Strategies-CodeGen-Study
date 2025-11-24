@@ -1,0 +1,5 @@
+Example 1:
+Input: a = 3, b = 7, c = 5 → Output: 7
+Example 2:
+Input: a = 9, b = 2, c = 9 → Output: 9
+Now write a function max_of_three(a, b, c) that returns the maximum value among the three inputs.

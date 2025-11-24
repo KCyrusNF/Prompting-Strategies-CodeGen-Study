@@ -1,0 +1,13 @@
+Example 1:
+Input: 123
+Reasoning: Extract each digit: 1, 2, 3, then add them together: 1 + 2 + 3 = 6
+Output: 6
+Example 2:
+Input: 405
+Reasoning: Extract each digit: 4, 0, 5, then add them together: 4 + 0 + 5 = 9
+Output: 9
+Now, solve step by step:
+First, convert the number to a string to access each digit individually.
+Then, go through each character (digit) one by one.
+Next, convert each character back to an integer and add it to a running total.
+Finally, write a function sum_digits(n) that returns the sum of all digits in the given number.

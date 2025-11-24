@@ -1,0 +1,73 @@
+{
+	"prompt_design": {
+		"task_metadata": {
+			"task_id": "task_036",
+			"task_title": "Average of List Function – Manual Counting and Summation",
+			"task_description": "Write a Python function average_of_list(nums) that computes the arithmetic mean of a list by manually summing and counting its elements using loops.",
+			"expected_output_format": "Step-by-step reasoning followed by Python implementation and explanation.",
+			"difficulty_level": "3/10",
+			"topic_area": "Programming, Python, Iteration, Arithmetic Mean"
+		},
+		"prompt": [
+			{
+				"reasoning_style": "CoT",
+				"example_context": "Few-Shot",
+				"prompt_text": "task_036_prompt.txt"
+				"num_examples": 2,
+				"prompt_tokens": 141
+			}
+		],
+		"runs": [
+			{
+				"response": {
+					"model_response": "task_036_response.txt"
+					"output_tokens": 151,
+					"compile_errors": 0,
+					"semantic_errors": 0
+				},
+				"experiment_record": {
+					"timestamp": "2025-10-27T00:00:00Z",
+					"model_name": "GPT-5 via ChatGPT Plus",
+					"token_counter_model": "tiktoken for gpt-4o",
+					"temperature": 0.0,
+					"cost_rates": {
+						"input_cost_per_1M_tokens_usd": 1.250,
+						"output_cost_per_1M_tokens_usd": 0.125,
+						"cached_input_cost_per_1M_tokens_usd": 10.000
+					},
+					"cost_usd": 0.00168625,
+					"self_evaluation": {
+						"accuracy": 10,
+						"coherence_score": 9,
+						"confidence": 9,
+						"reasoning_clarity": 9,
+						"difficulty_of_interpreting_prompt": 2,
+						"comments": "The reasoning and code are correct and coherent. The manual counting logic demonstrates understanding of loops and iteration. Slight redundancy in phrasing reduces coherence slightly but overall quality is excellent."
+					}
+					"supervised-evaluations": [
+						{
+							"evaluator_name": "Koorosh Nobakhtfar",
+							"factual_correctness": 4,
+							"Reasoning_quality": 5,
+							"coherency_and_clarity": 5,
+							"completeness": 5,
+							"understanding_depth": 5,
+							"weighted_total": 95,
+							"comments": ""
+						}
+						{
+							"evaluator_name": "Kenan Çakılcı",
+							"factual_correctness": 4,
+							"Reasoning_quality": 5,
+							"coherency_and_clarity": 5,
+							"completeness": 4,
+							"understanding_depth": 5,
+							"weighted_total": 91,
+							"comments": ""
+						}
+					],
+				}
+			}
+		]
+	}
+}

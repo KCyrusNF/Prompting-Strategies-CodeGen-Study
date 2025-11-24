@@ -1,0 +1,39 @@
+Example 1:
+Input: [7, 10, 15, 20]
+Reasoning:
+
+Initialize an empty result list: result = []
+Check 7: 7 % 2 = 1 (not 0) → 7 is odd → skip it, result = []
+Check 10: 10 % 2 = 0 (equals 0) → 10 is even → add it, result = [10]
+Check 15: 15 % 2 = 1 (not 0) → 15 is odd → skip it, result = [10]
+Check 20: 20 % 2 = 0 (equals 0) → 20 is even → add it, result = [10, 20]
+Output: [10, 20]
+
+Example 2:
+Input: [1, 3, 5]
+Reasoning:
+
+Initialize an empty result list: result = []
+Check 1: 1 % 2 = 1 (not 0) → 1 is odd → skip it, result = []
+Check 3: 3 % 2 = 1 (not 0) → 3 is odd → skip it, result = []
+Check 5: 5 % 2 = 1 (not 0) → 5 is odd → skip it, result = []
+Output: []
+
+Example 3:
+Input: [2, 4, 6, 8]
+Reasoning:
+
+Initialize an empty result list: result = []
+Check 2: 2 % 2 = 0 → add it, result = [2]
+Check 4: 4 % 2 = 0 → add it, result = [2, 4]
+Check 6: 6 % 2 = 0 → add it, result = [2, 4, 6]
+Check 8: 8 % 2 = 0 → add it, result = [2, 4, 6, 8]
+Output: [2, 4, 6, 8]
+
+Now, solve step by step:
+First, initialize an empty list to store the even numbers.
+Then, go through each number in the input list one by one.
+Next, for each number, calculate the remainder when divided by 2 (using the modulo operator %).
+If the remainder equals 0, the number is even, so add it to the result list.
+If the remainder is not 0, the number is odd, so skip it.
+Finally, write a Python function filter_even(nums) that returns a new list containing only the even numbers from the input list.

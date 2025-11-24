@@ -1,0 +1,9 @@
+"Check if string pairs are anagrams:
+
+'listen' and 'silent' → True
+'hello' and 'world' → False
+'triangle' and 'integral' → True
+'abc' and 'def' → False
+'aab' and 'aba' → True
+
+Write a python function are_anagrams(s1, s2)."

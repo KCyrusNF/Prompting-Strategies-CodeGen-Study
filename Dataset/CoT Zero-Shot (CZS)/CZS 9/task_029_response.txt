@@ -1,0 +1,19 @@
+Question:
+Follow the reasoning below to write your function.
+"To find how many vowels are in a given string:
+
+Go through each character one by one.
+
+Check if the character is one of 'a', 'e', 'i', 'o', or 'u'.
+
+Each time you find a vowel, increase your counter by 1.
+
+Finally, return the total count."
+Now write a Python function count_vowels(s) that returns the number of vowels in the string.
+
+Answer:def count_vowels(s):
+    count = 0
+    for ch in s:
+        if ch in "aeiou":
+            count += 1
+    return count

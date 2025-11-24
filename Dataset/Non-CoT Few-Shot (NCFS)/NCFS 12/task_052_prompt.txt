@@ -1,0 +1,8 @@
+"Create a palindrome checker based on these examples:
+
+'racecar' should return True
+'RaceCar' should return True (ignore case)
+'hello' should return False
+'A man a plan a canal Panama' should return True (ignore spaces and case)
+
+Implement is_palindrome(s) in Python."

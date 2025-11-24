@@ -1,0 +1,19 @@
+Sure! Here's a Python function that converts Fahrenheit to Celsius step by step:
+def to_celsius(f):
+    # Step 1: Subtract 32 from the Fahrenheit value
+    result = f - 32
+    
+    # Step 2: Multiply the result by 5/9
+    celsius = result * 5 / 9
+    
+    return celsius
+How it works:
+
+Subtract 32 from the Fahrenheit value (f).
+
+Multiply the result by 5/9 to convert it to Celsius.
+
+Return the Celsius value.
+
+You can use this function by passing the Fahrenheit value to it. For example:
+print(to_celsius(100))  # Output will be 37.77777777777778 (which is 100°F in Celsius)

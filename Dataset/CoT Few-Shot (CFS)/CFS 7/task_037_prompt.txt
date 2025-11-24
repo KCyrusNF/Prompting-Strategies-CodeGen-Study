@@ -1,0 +1,12 @@
+Example 1:
+Input: 'abc'
+Reasoning: Start from the end — characters are 'c', 'b', 'a' → reversed string = 'cba'
+Output: 'cba'
+
+Example 2:
+Input: 'hello'
+Reasoning: Taking characters backward gives 'olleh'
+Output: 'olleh'
+
+Now, think step by step: read the string from the last character to the first and collect them in order.
+Finally, write a function reverse_string(s) that returns the reversed version of the input string.

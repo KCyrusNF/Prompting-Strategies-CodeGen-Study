@@ -1,0 +1,13 @@
+Here’s a simple and clear implementation:
+def count_vowels(s: str) -> int:
+    vowels = "aeiouAEIOU"
+    count = 0
+    for char in s:
+        if char in vowels:
+            count += 1
+    return count
+✅ Example runs:
+print(count_vowels("hello"))      # 2
+print(count_vowels("ChatGPT"))    # 1
+print(count_vowels("aeiou"))      # 5
+print(count_vowels("xyz"))        # 0

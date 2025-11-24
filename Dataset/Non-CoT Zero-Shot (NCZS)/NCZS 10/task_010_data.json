@@ -1,0 +1,73 @@
+{
+	"prompt_design": {
+		"task_metadata": {
+			"task_id": "task_010",
+			"task_title": "Absolute Difference Function in Python",
+			"task_description": "Write a Python function that returns the absolute difference between two integers, correctly handling negative results.",
+			"expected_output_format": "Python function definition with correct conditional logic and integer return",
+			"difficulty_level": "2/10",
+			"topic_area": "Programming, Python Basics, Arithmetic Operations"
+		},
+		"prompt": [
+			{
+				"reasoning_style": "Non-CoT",
+				"example_context": "Zero-Shot",
+				"prompt_text": "task_010_prompt.txt",
+				"num_examples": 0,
+				"prompt_tokens": 30
+			}
+		],
+		"runs": [
+			{
+				"response": {
+					"model_response": "task_010_response.txt"
+					"output_tokens": 149,
+					"compile_errors": 0,
+					"semantic_errors": 0
+				},
+				"experiment_record": {
+					"timestamp": "2025-10-27T00:00:00Z",
+					"model_name": "GPT-5 via ChatGPT Plus",
+					"token_counter_model": "tiktoken for gpt-4o",
+					"temperature": 0.0,
+					"cost_rates": {
+						"input_cost_per_1M_tokens_usd": 1.250,
+						"output_cost_per_1M_tokens_usd": 0.125,
+						"cached_input_cost_per_1M_tokens_usd": 10.000
+					},
+					"cost_usd": 0.0015275,
+					"self_evaluation": {
+						"accuracy": 10,
+						"coherence_score": 10,
+						"confidence": 10,
+						"reasoning_clarity": 10,
+						"difficulty_of_interpreting_prompt": 2,
+						"comments": "The function correctly computes the absolute difference using conditional logic. It’s syntactically clear, logically valid, and well-explained with working examples."
+					}
+					"supervised-evaluations": [
+						{
+							"evaluator_name": "Koorosh Nobakhtfar",
+							"factual_correctness": 5,
+							"Reasoning_quality": 5,
+							"coherency_and_clarity": 4,
+							"completeness": 5,
+							"understanding_depth": 5,
+							"weighted_total": 96,
+							"comments": ""
+						}
+						{
+							"evaluator_name": "Kenan Çakılcı",
+							"factual_correctness": 5,
+							"Reasoning_quality": 4,
+							"coherency_and_clarity": 4,
+							"completeness": 3,
+							"understanding_depth": 5,
+							"weighted_total": 83,
+							"comments": ""
+						}
+					],
+				}
+			}
+		]
+	}
+}

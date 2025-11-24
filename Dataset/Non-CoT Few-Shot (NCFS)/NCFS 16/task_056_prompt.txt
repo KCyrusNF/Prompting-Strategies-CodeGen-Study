@@ -1,0 +1,9 @@
+"Generate Fibonacci numbers:
+
+fibonacci(0) → 0
+fibonacci(1) → 1
+fibonacci(5) → 5
+fibonacci(7) → 13
+fibonacci(10) → 55
+
+Write a python fibonacci(n) function."

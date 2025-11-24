@@ -1,0 +1,19 @@
+Here’s the Python function you asked for:
+def is_binary(s):
+    for char in s:
+        if char not in ('0', '1'):
+            return False
+    return True
+Explanation:
+
+The function iterates through each character in the string s.
+
+If it finds any character that is not '0' or '1', it immediately returns False.
+
+If the loop finishes without finding any invalid character, it returns True.
+
+✅ Examples:
+print(is_binary("10101"))   # True
+print(is_binary("10201"))   # False
+print(is_binary(""))        # True (empty string contains no invalid characters)
+Would you like me to show a shorter version using Python’s built-in functions (like set or regex)?

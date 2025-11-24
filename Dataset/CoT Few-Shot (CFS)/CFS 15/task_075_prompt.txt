@@ -1,0 +1,45 @@
+Example 1:
+Input: '  Hello   world  '
+Reasoning:
+
+Use split() without arguments to handle multiple spaces
+'  Hello   world  '.split() automatically removes leading/trailing spaces and splits on any whitespace
+Results in: ['Hello', 'world']
+Count the number of elements in the list: 2
+Output: 2
+
+Example 2:
+Input: 'Python is great'
+Reasoning:
+
+Use split() without arguments
+'Python is great'.split() splits on single spaces between words
+Results in: ['Python', 'is', 'great']
+Count the number of elements in the list: 3
+Output: 3
+
+Example 3:
+Input: ''
+Reasoning:
+
+Use split() without arguments on empty string
+''.split() returns an empty list (no words to split)
+Results in: []
+Count the number of elements in the list: 0
+Output: 0
+
+Example 4:
+Input: '   '
+Reasoning:
+
+Use split() without arguments on string with only spaces
+'   '.split() returns an empty list (only whitespace, no actual words)
+Results in: []
+Count the number of elements in the list: 0
+Output: 0
+
+Now, solve step by step:
+First, use the split() method without any arguments on the input string (this automatically handles multiple spaces, leading spaces, and trailing spaces).
+Then, the split() method will return a list of words, removing all extra whitespace and empty strings.
+Next, count the number of elements in the resulting list.
+Finally, write a Python function count_words(s) that returns the number of words in the input string.

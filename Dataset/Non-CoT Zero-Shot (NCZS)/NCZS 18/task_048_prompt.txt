@@ -1,0 +1,1 @@
+"Write a Python function char_frequency(s) that returns a dictionary with characters as keys and their frequency counts as values."

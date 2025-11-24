@@ -1,0 +1,9 @@
+"Determine if numbers are prime:
+
+2 → True (only divisible by 1 and 2)
+17 → True (no divisors between 2 and 16)
+4 → False (divisible by 2)
+15 → False (divisible by 3 and 5)
+29 → True
+
+write python function is_prime(n)."

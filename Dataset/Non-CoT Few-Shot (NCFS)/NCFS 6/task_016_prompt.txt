@@ -1,0 +1,5 @@
+Example 1:
+Input: [2, 4, 6] → Output: 4.0
+Example 2:
+Input: [10, 10, 10] → Output: 10.0
+Now write a function average_of_list(nums) that sums all numbers in nums and divides by the length of the list.

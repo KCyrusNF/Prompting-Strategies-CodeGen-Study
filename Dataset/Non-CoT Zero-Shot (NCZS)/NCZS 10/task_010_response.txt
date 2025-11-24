@@ -1,0 +1,20 @@
+Here’s the function that returns the absolute difference between two integers a and b:
+
+def absolute_difference(a: int, b: int) -> int:
+    diff = a - b
+    if diff < 0:
+        diff = -diff
+    return diff
+
+✅ Explanation:
+
+It first calculates the difference a - b.
+
+If that difference is negative, it flips the sign to make it positive.
+
+Finally, it returns the positive value, which is the absolute difference.
+
+Example runs:
+print(absolute_difference(10, 4))   # Output: 6
+print(absolute_difference(4, 10))   # Output: 6
+print(absolute_difference(7, 7))    # Output: 0

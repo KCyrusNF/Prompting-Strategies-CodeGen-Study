@@ -1,0 +1,6 @@
+To find how many vowels are in a given string, think step by step:
+First, go through each character one by one.
+Then, check if the character is one of 'a', 'e', 'i', 'o', or 'u'.
+Each time you find a vowel, increase your counter by 1.
+Finally, return the total count.
+Now write a python function count_vowels(s) that returns the number of vowels in the string.

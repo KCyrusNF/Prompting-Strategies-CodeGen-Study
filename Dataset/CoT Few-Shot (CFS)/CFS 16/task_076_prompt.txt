@@ -1,0 +1,49 @@
+Example 1:
+Input: n = 6
+Reasoning:
+
+Base cases: if n = 0, return 0; if n = 1, return 1
+For n = 6, calculate iteratively:
+Initialize: a = 0 (represents fib(0)), b = 1 (represents fib(1)), position = 2
+Iteration 1 (position = 2): next = 0 + 1 = 1, update a = 1, b = 1, position = 3
+Iteration 2 (position = 3): next = 1 + 1 = 2, update a = 1, b = 2, position = 4
+Iteration 3 (position = 4): next = 1 + 2 = 3, update a = 2, b = 3, position = 5
+Iteration 4 (position = 5): next = 2 + 3 = 5, update a = 3, b = 5, position = 6
+Iteration 5 (position = 6): next = 3 + 5 = 8, update a = 5, b = 8, position = 7
+Reached position 6, return b = 8
+Output: 8
+
+Example 2:
+Input: n = 0
+Reasoning:
+
+Base case: n = 0, return 0 immediately (no iteration needed)
+Output: 0
+
+Example 3:
+Input: n = 1
+Reasoning:
+
+Base case: n = 1, return 1 immediately (no iteration needed)
+Output: 1
+
+Example 4:
+Input: n = 3
+Reasoning:
+
+Initialize: a = 0, b = 1, position = 2
+Iteration 1 (position = 2): next = 0 + 1 = 1, update a = 1, b = 1, position = 3
+Iteration 2 (position = 3): next = 1 + 1 = 2, update a = 1, b = 2, position = 4
+Reached position 3, return b = 2
+Output: 2
+
+Now, solve step by step:
+First, handle the base cases: if n equals 0, return 0; if n equals 1, return 1.
+Then, initialize two variables: a = 0 (representing fib(0)) and b = 1 (representing fib(1)).
+Next, use a loop starting from position 2 up to n, and in each iteration:
+
+Calculate the next Fibonacci number by adding a and b
+Update a to be the previous value of b
+Update b to be the newly calculated Fibonacci number
+Finally, after the loop completes, return b as the nth Fibonacci number.
+Write a Python function fibonacci(n) that returns the nth Fibonacci number using this iterative two-variable approach.

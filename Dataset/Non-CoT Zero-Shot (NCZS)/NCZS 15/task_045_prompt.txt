@@ -1,0 +1,1 @@
+"Write a Python function count_words(s) that returns the number of words in the string s. Words are separated by spaces."

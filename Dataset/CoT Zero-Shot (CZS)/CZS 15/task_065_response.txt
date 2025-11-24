@@ -1,0 +1,29 @@
+To count the number of words in a sentence step-by-step, you can follow these steps:
+
+Split the sentence into words: We'll use the split() method with no arguments, which automatically handles multiple spaces, tabs, and any other whitespace. It splits the string wherever whitespace is found and removes leading and trailing whitespace.
+
+Store the resulting words in a list: The split() method will return a list of words from the sentence.
+
+Count the words: The number of words is simply the length of this list.
+
+Here is how you can implement this in Python:
+
+def count_words(s):
+    # Step 1: Split the sentence into words using split() which handles multiple spaces or tabs
+    words = s.split()
+    
+    # Step 2: Return the number of words by getting the length of the list
+    return len(words)
+
+Explanation:
+
+s.split() splits the string into words, handling multiple spaces and tabs automatically.
+
+len(words) gives the number of words in the list.
+
+Example usage:
+sentence = "   Hello,    how  are you   doing?  "
+print(count_words(sentence))  # Output: 5
+
+
+This will output 5 because the words in the sentence are: ["Hello,", "how", "are", "you", "doing?"].

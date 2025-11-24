@@ -1,0 +1,1 @@
+"Write a Python function list_intersection(list1, list2) that returns a new list containing elements that appear in both input lists (no duplicates)."

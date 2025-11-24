@@ -1,0 +1,21 @@
+Example 1:
+Input: a = 6, b = 10
+Reasoning: Subtract b from a: 6 − 10 = −4, then take the absolute value: |−4| = 4
+Output: 4
+Example 2:
+Input: a = 10, b = 6
+Reasoning: Subtract b from a: 10 − 6 = 4, then take the absolute value: |4| = 4 (already positive)
+Output: 4
+Example 3:
+Input: a = 5, b = 5
+Reasoning: Subtract b from a: 5 − 5 = 0, then take the absolute value: |0| = 0
+Output: 0
+Now solve step by step:
+Input: a = 8, b = 3
+First, subtract b from a: 8 − 3 = 5
+Then, take the absolute value of the result: |5| = 5 (already positive)
+Output: 5
+Now, solve step by step:
+First, subtract the second number (b) from the first number (a).
+Then, take the absolute value of the result to ensure it is non-negative.
+Finally, write a function absolute_difference(a, b) that returns the absolute difference between two numbers a and b.RetryClaude can make mistakes. Please double-check responses.

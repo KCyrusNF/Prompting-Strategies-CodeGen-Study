@@ -1,0 +1,6 @@
+Think step-by-step to count character frequencies in a string.
+Write a Python function char_frequency(s) that returns a dictionary mapping each character in s to its count.
+Initialize an empty dictionary to store counts.
+Iterate through each character in the string.
+For each character, increment its count in the dictionary (start at 0 if not present).
+After processing all characters, return the dictionary.

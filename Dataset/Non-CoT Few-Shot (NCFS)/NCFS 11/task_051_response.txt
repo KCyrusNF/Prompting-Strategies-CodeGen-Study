@@ -1,0 +1,14 @@
+Here’s a simple and correct Python function that matches your examples:
+def is_binary(s):
+    return all(ch in '01' for ch in s)
+✅ Explanation:
+
+all(ch in '01' for ch in s) checks that every character in the string is either '0' or '1'.
+
+For an empty string, the all() function returns True by definition (it has no elements that violate the condition).
+
+🧪 Test results:
+print(is_binary('1010'))  # True
+print(is_binary('1234'))  # False
+print(is_binary(''))      # True
+print(is_binary('10a1'))  # False

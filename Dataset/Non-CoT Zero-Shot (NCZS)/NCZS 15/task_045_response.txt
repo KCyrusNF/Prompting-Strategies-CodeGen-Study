@@ -1,0 +1,16 @@
+Here’s a simple and clean Python function that counts the number of words in a string, assuming words are separated by spaces:
+def count_words(s):
+    # Split the string by spaces and filter out any empty strings
+    words = s.split()
+    return len(words)
+Explanation:
+
+s.split() splits the string into a list of words using whitespace (spaces, tabs, newlines) as separators.
+
+If there are multiple spaces, split() automatically ignores extra ones.
+
+len(words) returns how many words were found.
+
+✅ Example:print(count_words("Hello world"))              # Output: 2
+print(count_words("   This is   a test  "))    # Output: 4
+print(count_words(""))                         # Output: 0

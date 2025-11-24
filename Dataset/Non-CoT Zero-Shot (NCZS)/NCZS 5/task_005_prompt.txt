@@ -1,0 +1,1 @@
+Now write a function max_of_three(a, b, c) that returns the largest of the three numbers a, b, and c.

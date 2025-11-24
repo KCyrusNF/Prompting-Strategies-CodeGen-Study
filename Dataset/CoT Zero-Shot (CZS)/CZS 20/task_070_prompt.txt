@@ -1,0 +1,6 @@
+Think step-by-step to determine if two strings are anagrams.
+Write a Python function are_anagrams(s1, s2) that returns True if the two strings are anagrams and False otherwise.
+Sort the characters of the first string.
+Sort the characters of the second string.
+Compare the two sorted results.
+If they are identical, return True; otherwise, return False.

@@ -1,0 +1,15 @@
+Here's the function count_positives(nums) that counts how many elements in the list nums are greater than 0:
+def count_positives(nums):
+    return sum(1 for num in nums if num > 0)
+Explanation:
+
+sum(1 for num in nums if num > 0) is a generator expression that iterates through each element num in the list nums.
+
+For each num, it checks if num > 0. If true, it adds 1 to the sum.
+
+The final result is the total count of positive numbers in the list.
+Example Usage:
+print(count_positives([1, -2, 3, 0]))  # Output: 2
+print(count_positives([-5, -1, 0]))    # Output: 0
+print(count_positives([10, 20, -1, 5]))  # Output: 3
+Let me know if you'd like further clarifications or adjustments!

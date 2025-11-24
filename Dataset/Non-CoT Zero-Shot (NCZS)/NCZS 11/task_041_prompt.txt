@@ -1,0 +1,1 @@
+"Write a Python function is_binary(s) that returns True if the string s contains only '0' and '1' characters, False otherwise."

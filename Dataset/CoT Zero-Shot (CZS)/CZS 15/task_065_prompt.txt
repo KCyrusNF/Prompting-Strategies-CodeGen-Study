@@ -1,0 +1,6 @@
+Think step-by-step to count words in a sentence.
+Write a Python function count_words(s) that returns the number of words in the string s.
+Use split() with no arguments to split the string into words, so consecutive spaces or tabs are handled correctly.
+Store the resulting list of words.
+Return the length of that list.
+Return the length of the resulting list.

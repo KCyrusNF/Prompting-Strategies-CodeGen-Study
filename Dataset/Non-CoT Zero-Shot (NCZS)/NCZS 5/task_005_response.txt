@@ -1,0 +1,12 @@
+Here’s the function in Python that returns the largest of three numbers:
+def max_of_three(a, b, c):
+    if a >= b and a >= c:
+        return a
+    elif b >= a and b >= c:
+        return b
+    else:
+        return c
+✅ Example usage:
+print(max_of_three(2, 5, 3))   # Output: 5
+print(max_of_three(10, 10, 5)) # Output: 10
+print(max_of_three(-1, -5, -3))# Output: -1

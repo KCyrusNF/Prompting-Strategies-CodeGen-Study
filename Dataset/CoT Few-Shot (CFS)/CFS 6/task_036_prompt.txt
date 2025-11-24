@@ -1,0 +1,14 @@
+Example 1:
+Input: [2, 4, 6]
+Reasoning: sum = 12, count = 3 → average = 12 / 3 = 4.0
+Output: 4.0
+
+Example 2:
+Input: [5, 15]
+Reasoning: sum = 20, count = 2 → average = 20 / 2 = 10.0
+Output: 10.0
+
+Now, solve step by step:
+First, add up all numbers in the list.
+Then, divide this sum by how many elements the list has.
+Finally, write a function average_of_list(nums) that returns the arithmetic mean of nums.

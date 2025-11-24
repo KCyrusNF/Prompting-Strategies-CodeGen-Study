@@ -1,0 +1,9 @@
+Here's the Python function filter_even(nums) that filters out even numbers from the given list:
+def filter_even(nums):
+    # Using list comprehension to filter out even numbers
+    return [num for num in nums if num % 2 == 0]
+Example usage:
+nums = [1, 2, 3, 4, 5, 6, 7, 8]
+even_nums = filter_even(nums)
+print(even_nums)  # Output: [2, 4, 6, 8]
+This function iterates over the list and keeps only the numbers that are divisible by 2 (i.e., even numbers).

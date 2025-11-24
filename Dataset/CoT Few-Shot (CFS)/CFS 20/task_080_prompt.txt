@@ -1,0 +1,75 @@
+Example 1:
+Input: s1 = 'listen', s2 = 'silent'
+Reasoning:
+
+Step 1: Sort first string 'listen'
+
+Break into characters: ['l', 'i', 's', 't', 'e', 'n']
+Sort alphabetically: ['e', 'i', 'l', 'n', 's', 't']
+Join back together: 'eilnst'
+
+
+Step 2: Sort second string 'silent'
+
+Break into characters: ['s', 'i', 'l', 'e', 'n', 't']
+Sort alphabetically: ['e', 'i', 'l', 'n', 's', 't']
+Join back together: 'eilnst'
+
+
+Step 3: Compare sorted strings
+
+'eilnst' == 'eilnst'? Yes → They are anagrams
+Output: True
+
+
+
+Example 2:
+Input: s1 = 'hello', s2 = 'world'
+Reasoning:
+
+Step 1: Sort first string 'hello'
+
+Break into characters: ['h', 'e', 'l', 'l', 'o']
+Sort alphabetically: ['e', 'h', 'l', 'l', 'o']
+Join back together: 'ehllo'
+
+
+Step 2: Sort second string 'world'
+
+Break into characters: ['w', 'o', 'r', 'l', 'd']
+Sort alphabetically: ['d', 'l', 'o', 'r', 'w']
+Join back together: 'dlorw'
+
+
+Step 3: Compare sorted strings
+
+'ehllo' == 'dlorw'? No → They are not anagrams
+Output: False
+
+
+
+Example 3:
+Input: s1 = 'abc', s2 = 'cba'
+Reasoning:
+
+Step 1: Sort 'abc' → ['a', 'b', 'c'] → 'abc'
+Step 2: Sort 'cba' → ['a', 'b', 'c'] → 'abc'
+Step 3: Compare: 'abc' == 'abc'? Yes → They are anagrams
+Output: True
+
+Example 4:
+Input: s1 = 'rat', s2 = 'car'
+Reasoning:
+
+Step 1: Sort 'rat' → ['a', 'r', 't'] → 'art'
+Step 2: Sort 'car' → ['a', 'c', 'r'] → 'acr'
+Step 3: Compare: 'art' == 'acr'? No → They are not anagrams
+Output: False
+
+Now, solve step by step:
+First, take the first string and convert it to a sorted sequence of characters.
+Then, take the second string and convert it to a sorted sequence of characters.
+Next, compare the two sorted sequences character by character.
+If the sorted sequences are exactly equal, the strings are anagrams (they contain the same characters with the same frequencies).
+If the sorted sequences are different, the strings are not anagrams.
+Finally, write a Python function are_anagrams(s1, s2) that returns True if the two strings are anagrams of each other, False otherwise.

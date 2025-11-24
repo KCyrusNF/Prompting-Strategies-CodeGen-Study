@@ -1,0 +1,1 @@
+Now write a function count_positives(nums) that returns how many numbers in the list nums are strictly greater than 0.

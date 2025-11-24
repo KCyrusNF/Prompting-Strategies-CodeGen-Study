@@ -1,0 +1,13 @@
+Here’s the correct Python function for that:
+def absolute_difference(a: int, b: int) -> int:
+    return abs(a - b)
+✅ Explanation:
+
+abs(x) returns the absolute value of x, meaning it always gives a non-negative result.
+
+So abs(a - b) computes the absolute difference between the two numbers.
+
+Examples:
+print(absolute_difference(10, 6))  # Output: 4
+print(absolute_difference(6, 10))  # Output: 4
+print(absolute_difference(5, 5))   # Output: 0

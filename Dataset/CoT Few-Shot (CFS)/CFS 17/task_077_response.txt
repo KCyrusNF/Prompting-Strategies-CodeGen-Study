@@ -1,0 +1,30 @@
+Here’s the complete Python function is_prime(n) that follows the exact reasoning steps you described:
+
+import math
+
+def is_prime(n):
+    # Step 1: Handle edge cases
+    if n < 2:
+        return False
+
+    # Step 2: Calculate the maximum divisor to check
+    max_divisor = int(math.sqrt(n))
+
+    # Step 3: Loop through potential divisors
+    for divisor in range(2, max_divisor + 1):
+        # Step 4: Check divisibility
+        if n % divisor == 0:
+            return False  # Found a divisor → not prime
+
+    # Step 5: No divisors found → prime
+    return True
+
+✅ Example runs:
+print(is_prime(17))  # True
+print(is_prime(15))  # False
+print(is_prime(2))   # True
+print(is_prime(1))   # False
+print(is_prime(4))   # False
+
+
+This function efficiently checks for primality by only testing divisors up to √n, which greatly reduces computation time for large numbers.

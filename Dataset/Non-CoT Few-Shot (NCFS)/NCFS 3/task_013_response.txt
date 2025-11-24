@@ -1,0 +1,25 @@
+To determine if a year is a leap year, we need to apply the rules of the Gregorian calendar. The rules are:
+
+If the year is divisible by 4, it's a potential leap year.
+
+However, if the year is divisible by 100, it is not a leap year, unless...
+
+The year is also divisible by 400. In that case, it is a leap year.
+
+Here's the function is_leap_year(year):
+def is_leap_year(year):
+    if (year % 4 == 0 and year % 100 != 0) or (year % 400 == 0):
+        return True
+    else:
+        return False
+Explanation:
+
+First, check if the year is divisible by 4 but not divisible by 100 (which means it’s a leap year).
+
+If the year is divisible by 100, check if it is also divisible by 400 to determine if it's a leap year.
+
+Example Usage:
+print(is_leap_year(2000))  # True (divisible by 400)
+print(is_leap_year(1900))  # False (divisible by 100 but not 400)
+print(is_leap_year(2024))  # True (divisible by 4, but not 100)
+print(is_leap_year(2023))  # False (not divisible by 4)

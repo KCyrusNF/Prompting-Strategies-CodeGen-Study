@@ -1,0 +1,21 @@
+Great, let's do it step by step (Chain-of-Thought style prompt → final code).
+
+Reasoning:
+
+We want n! (n factorial), which means:
+1 × 2 × 3 × ... × n.
+
+We'll keep a running result.
+
+We'll multiply that result by each number from 1 to n.
+
+We'll return the final result.
+
+Edge case: if n = 0, factorial is 1 by definition.
+
+Here's the function:
+def factorial_iter(n: int) -> int:
+    result = 1
+    for i in range(1, n + 1):
+        result = result * i
+    return result

@@ -1,0 +1,23 @@
+Sure! Let's break it down step by step as you requested:
+
+Assume the maximum is a.
+We'll start by initializing the maximum value to a.
+
+Check if b is greater than the current maximum (which is a).
+If b is greater, update the maximum to b.
+
+Check if c is greater than the current maximum (which could now be either a or b).
+If c is greater, update the maximum to c.
+
+Now, we can write the function based on this process:
+def max_of_three(a, b, c):
+    maximum = a  # Step 1: Assume maximum is a
+    if b > maximum:  # Step 2: If b is greater, update the maximum
+        maximum = b
+    if c > maximum:  # Step 3: If c is greater, update the maximum
+        maximum = c
+    return maximum  # Return the final maximum value
+Example usage:
+print(max_of_three(5, 9, 3))  # Output: 9
+print(max_of_three(7, 4, 8))  # Output: 8
+Let me know if you need further clarification or improvements!

@@ -1,0 +1,3 @@
+To compute the factorial of a number n, think step by step:
+Start from 1, then multiply it by each integer from 1 up to n.
+Now write a Python function factorial_iter(n) that returns the factorial of n using an iterative approach.

@@ -1,0 +1,18 @@
+Example 1:
+Input: 'hello'
+Reasoning: The letters are h, e, l, l, o.
+'e' and 'o' are vowels → 2 total.
+Output: 2
+
+Example 2:
+Input: 'sky'
+Reasoning: The letters are s, k, y.
+None of them are vowels → 0 total.
+Output: 0
+
+Now solve step by step:
+Go through each character of the string one by one.
+Check if the character is in 'aeiou'.
+Keep a counter for how many vowels you find.
+Finally, return that count.
+Now write a Python function count_vowels(s) that returns how many of the characters in s are vowels.

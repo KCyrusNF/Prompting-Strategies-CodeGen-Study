@@ -1,0 +1,1 @@
+"Write a Python function are_anagrams(s1, s2) that returns True if the two strings are anagrams of each other (contain the same characters with the same frequencies), False otherwise."

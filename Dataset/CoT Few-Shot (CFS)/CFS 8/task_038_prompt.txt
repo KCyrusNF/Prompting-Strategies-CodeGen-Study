@@ -1,0 +1,13 @@
+Example 1:
+Input: 4
+Reasoning: Start from 1 and multiply step by step: 1 × 1 = 1, then 1 × 2 = 2, then 2 × 3 = 6, then 6 × 4 = 24
+Output: 24
+Example 2:
+Input: 0
+Reasoning: Factorial of 0 is defined as 1 by convention (no multiplication needed)
+Output: 1
+Now, solve step by step:
+First, initialize a result variable to 1 (since multiplying by 1 doesn't change the value).
+Then, use a loop to go through each integer from 1 up to n (inclusive).
+Next, multiply the result by each integer in the loop.
+Finally, write a Python function factorial_iter(n) that returns n! (n factorial) using an iterative loop approach.

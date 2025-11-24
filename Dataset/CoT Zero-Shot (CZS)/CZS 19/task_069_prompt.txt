@@ -1,0 +1,8 @@
+Think step-by-step to perform list rotation.
+Write a Python function rotate_list(nums, k) that rotates the list nums to the right by k positions.
+Determine the length of the list.
+If the list is empty, return an empty list.
+Reduce k modulo the list length to handle large rotation values.
+If k becomes 0, return a shallow copy of the original list.
+Use slicing to place the last k elements in front: concatenate nums[-k:] with nums[:-k].
+Return the resulting list.

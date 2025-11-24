@@ -1,0 +1,30 @@
+Here’s a clean and efficient implementation of the is_prime(n) function in Python:
+def is_prime(n):
+    if n <= 1:
+        return False
+    if n <= 3:
+        return True
+    if n % 2 == 0 or n % 3 == 0:
+        return False
+
+    i = 5
+    while i * i <= n:
+        if n % i == 0 or n % (i + 2) == 0:
+            return False
+        i += 6
+    return True
+Explanation:
+
+First, it rules out numbers ≤ 1 (not prime).
+
+2 and 3 are prime numbers.
+
+Any number divisible by 2 or 3 is not prime.
+
+Then it checks divisibility using numbers of the form 6k ± 1 up to √n — this is an efficient optimization since all primes > 3 are of that form.
+
+✅ Examples:
+print(is_prime(2))   # True
+print(is_prime(17))  # True
+print(is_prime(18))  # False
+print(is_prime(29))  # True

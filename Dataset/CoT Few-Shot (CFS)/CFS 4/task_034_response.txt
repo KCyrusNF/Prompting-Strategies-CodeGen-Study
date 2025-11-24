@@ -1,0 +1,56 @@
+Sure! Here's how we can break down the process step by step:
+
+Steps:
+
+Convert the number to a string: This allows us to treat the number as a sequence of characters, which we can easily iterate over.
+
+Iterate over each character: We can loop through each character (which represents a digit) in the string.
+
+Convert each character back to an integer: After extracting each digit as a string, we need to convert it to an integer to perform the addition.
+
+Sum the digits: Keep a running total by adding each integer to an accumulator variable.
+
+Return the sum: Finally, return the total sum of the digits.
+
+Function implementation:
+def sum_digits(n):
+    # Step 1: Convert the number to a string
+    n_str = str(n)
+    
+    # Step 2: Initialize a variable to store the sum of digits
+    total = 0
+    
+    # Step 3: Iterate through each character in the string
+    for char in n_str:
+        # Step 4: Convert each character back to an integer and add it to the total
+        total += int(char)
+    
+    # Step 5: Return the total sum of digits
+    return total
+
+Example Walkthrough:
+Example 1:
+
+Input: 123
+
+Convert 123 to a string: "123"
+
+Iterate through the string: '1', '2', '3'
+
+Convert each to an integer and add them: 1 + 2 + 3 = 6
+
+Output: 6
+
+Example 2:
+
+Input: 405
+
+Convert 405 to a string: "405"
+
+Iterate through the string: '4', '0', '5'
+
+Convert each to an integer and add them: 4 + 0 + 5 = 9
+
+Output: 9
+
+You can now use this function to find the sum of digits for any number! Let me know if you'd like to test it with any specific numbers.

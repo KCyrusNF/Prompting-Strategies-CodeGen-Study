@@ -1,0 +1,20 @@
+Here’s the Python function you asked for:
+def factorial_iter(n):
+    result = 1
+    for i in range(1, n + 1):
+        result *= i
+    return result
+✅ Explanation:
+
+Start with 1 since factorial is a product.
+
+Loop from 1 to n inclusive.
+
+Multiply result by each i.
+
+Finally, return the total product.
+
+🧮 Examples:
+print(factorial_iter(0))  # Output: 1  (by definition, 0! = 1)
+print(factorial_iter(5))  # Output: 120 (1*2*3*4*5)
+print(factorial_iter(7))  # Output: 5040

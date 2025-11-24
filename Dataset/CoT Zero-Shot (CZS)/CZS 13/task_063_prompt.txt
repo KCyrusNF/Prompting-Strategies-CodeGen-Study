@@ -1,0 +1,6 @@
+"Write a Python function filter_even(nums) to extract even numbers and think step by step.
+Iterate through each element in the list.
+Check whether the current number is divisible by 2 (num % 2 == 0).
+If it is, include that number in the result list.
+After processing all elements, return the list of even numbers.
+Return the final list of even numbers.

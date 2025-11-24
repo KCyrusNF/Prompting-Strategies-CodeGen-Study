@@ -1,0 +1,8 @@
+"Map characters to their frequencies:
+
+'hello' → {'h': 1, 'e': 1, 'l': 2, 'o': 1}
+'aaa' → {'a': 3}
+'' → {}
+'programming' → {'p': 1, 'r': 2, 'o': 1, 'g': 2, 'a': 1, 'm': 2, 'i': 1, 'n': 1}
+
+Code char_frequency(s)."

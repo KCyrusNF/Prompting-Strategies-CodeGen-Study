@@ -1,0 +1,1 @@
+"Write a Python function filter_even(nums) that returns a new list containing only the even numbers from the input list nums."
