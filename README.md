@@ -84,9 +84,9 @@ Dataset/
 **Weighted total formula**  
 Our paper does **not** include a formula for `weighted_total`. We compute it as:
 
-\[
+$$
 \text{Weighted Total} = \left( \frac{\sum_{i=1}^{n} ( \text{Score}_i \times \text{weight}_i )}{5} \right) \times 100
-\]
+$$
 
 (where scores are 1–5 and weights sum to 1.0). 
 
@@ -96,21 +96,21 @@ Our paper does **not** include a formula for `weighted_total`. We compute it as:
 
 - Eta-squared (η²), partial eta-squared (η<sub>p</sub>²), and omega-squared (ω²) were derived from the ANOVA results using their standard formulas based on sums-of-squares (SS), mean-squares (MS) and degrees-of-freedom (df).
 
-\[
+$$
 \eta^{2} = \frac{SS_{\text{effect}}}{SS_{\text{total}}}
-\]
-\[
+$$
+$$
 \text{partial } \eta^{2} = 
 \frac{SS_{\text{effect}}}{SS_{\text{effect}} + SS_{\text{error}}}
-\]
-\[
+$$
+$$
 \omega^{2} =
 \frac{
 SS_{\text{effect}} - (df_{\text{effect}})(MS_{\text{error}})
 }{
 SS_{\text{total}} + MS_{\text{error}}
 }
-\]
+$$
 
 - Some formulas are **not presented in our paper**
 - For more information regarding the formulas, see the reference below.
