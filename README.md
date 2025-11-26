@@ -18,7 +18,7 @@ This repository accompanies the research study and provides the code, dataset, a
 
 ### 3) ANOVA Analysis Excel File
 - ANOVA conducted using the **Analysis ToolPak** add-in.
-- Effect sizes (eta-squared, partial eta-squared, and omega-squared) were calculated manually from standard formulas (see **Effect Sizes (ANOVA)** below).
+- Effect sizes (eta-squared, partial eta-squared, and omega-squared) were calculated manually using standard definitions (see **Effect Sizes** below).
 - To enable the add-in in Excel:
   1. **File → Options → Add-ins**
   2. From **Manage**, select **Excel Add-ins**, click **Go…**
@@ -82,21 +82,38 @@ Dataset/
 | `weighted_total`         |  N/A   | 0 to 100 (pct) | Final composite score from weights |
 
 **Weighted total formula**  
-The paper does **not** include a formula for `weighted_total`. We compute it as:
+Our paper does **not** include a formula for `weighted_total`. We compute it as:
 
-$$
+\[
 \text{Weighted Total} = \left( \frac{\sum_{i=1}^{n} ( \text{Score}_i \times \text{weight}_i )}{5} \right) \times 100
-$$
-
+\]
 
 (where scores are 1–5 and weights sum to 1.0). 
 
 ---
 
-## Effect Sizes (ANOVA)
+## Effect Sizes
 
-- Eta-squared (η²), partial eta-squared (η<sub>p</sub>²), and omega-squared (ω²) were derived from ANOVA sums of squares using standard definitions.
-- Some formulas are **not reproduced in the paper**; see the reference below for details.
+- Eta-squared (η²), partial eta-squared (η<sub>p</sub>²), and omega-squared (ω²) were derived from the ANOVA results using their standard formulas based on sums-of-squares (SS), mean-squares (MS) and degrees-of-freedom (df).
+
+\[
+\eta^{2} = \frac{SS_{\text{effect}}}{SS_{\text{total}}}
+\]
+\[
+\text{partial } \eta^{2} = 
+\frac{SS_{\text{effect}}}{SS_{\text{effect}} + SS_{\text{error}}}
+\]
+\[
+\omega^{2} =
+\frac{
+SS_{\text{effect}} - (df_{\text{effect}})(MS_{\text{error}})
+}{
+SS_{\text{total}} + MS_{\text{error}}
+}
+\]
+
+- Some formulas are **not presented in our paper**
+- For more information regarding the formulas, see the reference below.
 
 **Reference for effect-size formulas**  
 B. G. Tabachnick and L. S. Fidell, *Using Multivariate Statistics*, 6th ed., Upper Saddle River, NJ: Pearson Education, 2013, pp. 54–55.
