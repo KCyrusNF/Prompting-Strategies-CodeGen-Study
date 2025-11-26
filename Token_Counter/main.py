@@ -5,10 +5,13 @@ def count_tokens(text: str, model: str = "gpt-4o") -> int:
     # Load tokenizer for the model
     enc = tiktoken.encoding_for_model(model)
 
-    # Optional: use a fixed encoding explicitly (e.g., for cross-model consistency)
-    # If you switch to a manual encoding (like below), make sure to update other
-    # parts of the function accordingly—particularly any logic that depends on
-    # the 'model' parameter or its associated tokenizer.
+    # Optional: Use a fixed encoding explicitly (e.g., for cross-model consistency)
+    # Note: "o200k_base" is a general-purpose tokenizer shared across multiple
+    # OpenAI models (GPT-4o, GPT-4o-mini, o1-preview, etc.). Using it manually can
+    # help keep token counts consistent even when switching models, but it also
+    # bypasses each model's default tokenizer behavior. If you choose this route,
+    # make sure other parts of the function are updated accordingly, especially any
+    # logic that assumes a model-specific tokenizer.
     # enc = tiktoken.get_encoding("o200k_base")
 
     # Verify the encode-decode process works correctly
@@ -44,7 +47,7 @@ def main():
             print(f"Unexpected error: {e}\n")
         finally:
             cmd = input("Do you want to continue (y, n)? ")
-            if cmd == "n":
+            if cmd.lower() == "n":
                 break
 
 
