@@ -2,7 +2,7 @@
 
 **Chain-of-Thought vs. Few-Shot: A Comparative Study of Prompting Strategies for Code Generation**
 
-This repository accompanies the research study and provides the code, dataset, and analysis artifacts referenced in the paper.
+This repository accompanies the research study and provides the code, dataset, and analysis artifacts referenced in the paper ([see Associated Publication](#associated-publication)).
 
 ---
 
@@ -18,7 +18,7 @@ This repository accompanies the research study and provides the code, dataset, a
 
 ### 3) ANOVA Analysis Excel File
 - ANOVA conducted using the **Analysis ToolPak** add-in.
-- Effect sizes (eta-squared, partial eta-squared, and omega-squared) were calculated manually using standard definitions (see **Effect Sizes** below).
+- Effect sizes (eta-squared, partial eta-squared, and omega-squared) were calculated manually using standard definitions ([see Effect Sizes](#effect-sizes)).
 - To enable the add-in in Excel:
   1. **File → Options → Add-ins**
   2. From **Manage**, select **Excel Add-ins**, click **Go…**
@@ -120,6 +120,10 @@ B. G. Tabachnick and L. S. Fidell, *Using Multivariate Statistics*, 6th ed., Upp
 
 ---
 
-## Citation / Reference
+## Associated Publication
 
-This section will be updated with a formal citation once the paper is published
+This repository contains the source code and materials for the work described in our paper, "Chain-of-Thought vs. Few-Shot: A Comparative Study of Prompting Strategies for Code Generation," by K. Nobakhtfar, K. Cakilci, R. Zilan. 
+
+Status: Submitted to the 5th International Informatics and Software Engineering Conference (IISEC 2026).
+
+Note: The final, peer-reviewed version of the paper may contain minor changes. We will update this section upon acceptance or publication.
