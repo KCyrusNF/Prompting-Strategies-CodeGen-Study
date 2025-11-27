@@ -12,11 +12,11 @@ This repository accompanies the research study and provides the code, dataset, a
 - Authored by us; uses the `tiktoken` library for tokenization.
 - Installation instructions for `tiktoken` are available in the official repository: <https://github.com/openai/tiktoken>.
 
-### 2) Data & Analytics Excel File
+### 2) Data and Analytics Excel File
 - Contains the raw data for prompts, responses, and human evaluations.
 - Includes basic analytics for quick inspection.
 
-### 3) ANOVA Analysis Excel File
+### 3) ANOVA Excel File
 - ANOVA conducted using the **Analysis ToolPak** add-in.
 - Effect sizes (eta-squared, partial eta-squared, and omega-squared) were calculated manually using standard definitions ([see Effect Sizes](#effect-sizes)).
 - To enable the add-in in Excel:
