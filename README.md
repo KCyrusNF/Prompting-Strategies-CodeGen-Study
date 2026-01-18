@@ -124,6 +124,6 @@ B. G. Tabachnick and L. S. Fidell, *Using Multivariate Statistics*, 6th ed., Upp
 
 This repository contains the source code and materials for the work described in our paper, "Chain-of-Thought vs. Few-Shot: A Comparative Study of Prompting Strategies for Code Generation," by K. Nobakhtfar, K. Çakılcı, R. Zilan. 
 
-Status: Submitted to the 5th International Informatics and Software Engineering Conference (IISEC 2026).
+Status: Accepted by the 5th International Informatics and Software Engineering Conference (IISEC 2026).
 
 Note: The final, peer-reviewed version of the paper may contain minor changes. We will update this section upon acceptance or publication.
