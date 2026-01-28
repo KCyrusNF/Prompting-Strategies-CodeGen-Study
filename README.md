@@ -6,6 +6,13 @@ This repository accompanies the research study and provides the code, dataset, a
 
 ---
 
+## Contributors
+* **Koorosh Nobakhtfar** — Technical Analyst [[GitHub](https://github.com/KCyrusNF) | [LinkedIn](https://www.linkedin.com/in/kcyrusnf/)]
+* **Kenan Çakılcı** — Dataset Architect [[GitHub](https://github.com/kenancklc) | [LinkedIn](https://www.linkedin.com/in/kenancakilci/)]
+* **Ruken Zilan** — Research Supervisor [[LinkedIn](https://www.linkedin.com/in/rukenzilan/)]
+
+---
+
 ## Contents
 
 ### 1) Token Counter Program
@@ -81,14 +88,7 @@ Dataset/
 | `understanding_depth`    |  10%   | 1 to 5         | Does it show insight beyond surface-level? |
 | `weighted_total`         |  N/A   | 0 to 100 (pct) | Final composite score from weights |
 
-**Weighted total formula**  
-Our paper does **not** include a formula for `weighted_total`. We compute it as:
-
-$$
-\text{Weighted Total} = \left( \frac{\sum_{i=1}^{n} ( \text{Score}_i \times \text{weight}_i )}{5} \right) \times 100
-$$
-
-(where scores are 1–5 and weights sum to 1.0). 
+For more information regarding the evaluation of accuracy, see the [Accuracy Evaluation Process and Criteria](Accuracy%20Evaluation%20Process%20and%20Criteria.pptx) file.
 
 ---
 
@@ -124,6 +124,6 @@ B. G. Tabachnick and L. S. Fidell, *Using Multivariate Statistics*, 6th ed., Upp
 
 This repository contains the source code and materials for the work described in our paper, "Chain-of-Thought vs. Few-Shot: A Comparative Study of Prompting Strategies for Code Generation," by K. Nobakhtfar, K. Çakılcı, R. Zilan. 
 
-Status: Accepted by the 5th International Informatics and Software Engineering Conference (IISEC 2026).
+Current Status: Accepted by the 5th International Informatics and Software Engineering Conference (IISEC 2026).
 
 Note: The final, peer-reviewed version of the paper may contain minor changes. We will update this section upon acceptance or publication.
