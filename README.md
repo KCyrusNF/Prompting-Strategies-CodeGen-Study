@@ -131,12 +131,23 @@ Published in the IEEE conference proceedings of the **5th International Informat
 
 **DOI:** https://doi.org/10.1109/IISEC69317.2026.11418478
 
+### Publication Timeline
+
+| Event | Date |
+| :--- | :--- |
+| **Paper Submission** | December 1, 2025 |
+| **Notification of Acceptance** | January 9, 2026 |
+| **Camera-Ready Submission** | January 28, 2026 |
+| **Date of IISEC 2026 Conference** | February 5–6, 2026 |
+| **Published on IEEE Xplore** | March 10, 2026 |
+
 ---
 
-### Citation
+## Citation
 
 If you use this work in your research, please cite the paper:
 
+### BibTeX
 ```bibtex
 @INPROCEEDINGS{11418478,
   author={Nobakhtfar, Koorosh and Çakılcı, Kenan and Zilan, Ruken},
@@ -151,22 +162,14 @@ If you use this work in your research, please cite the paper:
 }
 ```
 
----
+### Plain Text
 
-### Publication Timeline
-
-| Event | Date |
-| :--- | :--- |
-| **Paper Submission** | December 1, 2025 |
-| **Notification of Acceptance** | January 9, 2026 |
-| **Camera-Ready Submission** | January 28, 2026 |
-| **Date of IISEC 2026 Conference** | February 5–6, 2026 |
-| **Published on IEEE Xplore** | March 10, 2026 |
+K. Nobakhtfar, K. Çakılcı and R. Zilan, "Chain-of-Thought vs. Few-Shot: A Comparative Study of Prompting Strategies for Code Generation," _2026 5th International Informatics and Software Engineering Conference (IISEC)_, Ankara, Turkiye, 2026, pp. 382-387, doi: 10.1109/IISEC69317.2026.11418478.
 
 ---
 
-### Links
+## Links
 
 - **IEEE Xplore:** https://doi.org/10.1109/IISEC69317.2026.11418478
-- **Repository:** https://github.com/KCyrusNF/Prompting-Strategies-CodeGen-Study
 - **Conference Website:** https://iisec.tbdakademi.org.tr/2026/
+- **Repository:** https://github.com/KCyrusNF/Prompting-Strategies-CodeGen-Study
