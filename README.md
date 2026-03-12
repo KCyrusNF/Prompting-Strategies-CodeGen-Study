@@ -122,8 +122,51 @@ B. G. Tabachnick and L. S. Fidell, *Using Multivariate Statistics*, 6th ed., Upp
 
 ## Associated Publication
 
-This repository contains the source code and materials for the work described in our paper, "Chain-of-Thought vs. Few-Shot: A Comparative Study of Prompting Strategies for Code Generation," by K. Nobakhtfar, K. Çakılcı, R. Zilan. 
+This repository contains the source code, datasets, and experimental materials for the following publication:
 
-Current Status: Accepted by the 5th International Informatics and Software Engineering Conference (IISEC 2026).
+**Chain-of-Thought vs. Few-Shot: A Comparative Study of Prompting Strategies for Code Generation**  
+*K. Nobakhtfar, K. Çakılcı, R. Zilan*
 
-Note: The final, peer-reviewed version of the paper may contain minor changes. We will update this section upon acceptance or publication.
+Published in the IEEE conference proceedings of the **5th International Informatics and Software Engineering Conference (IISEC 2026)** and available through **IEEE Xplore**.
+
+**DOI:** https://doi.org/10.1109/IISEC69317.2026.11418478
+
+---
+
+### Citation
+
+If you use this work in your research, please cite the paper:
+
+```bibtex
+@INPROCEEDINGS{11418478,
+  author={Nobakhtfar, Koorosh and Çakılcı, Kenan and Zilan, Ruken},
+  booktitle={2026 5th International Informatics and Software Engineering Conference (IISEC)}, 
+  title={Chain-of-Thought vs. Few-Shot: A Comparative Study of Prompting Strategies for Code Generation}, 
+  year={2026},
+  volume={},
+  number={},
+  pages={382-387},
+  keywords={Costs;Codes;Accuracy;Limiting;Large language models;Cognition;Robustness;Prompt engineering;Informatics;Software engineering;Chain-of-Thought (CoT);Few-Shot Learning;Large Language Models;Prompt Engineering;Empirical Study},
+  doi={10.1109/IISEC69317.2026.11418478}
+}
+```
+
+---
+
+### Publication Timeline
+
+| Event | Date |
+| :--- | :--- |
+| **Paper Submission** | December 1, 2025 |
+| **Notification of Acceptance** | January 9, 2026 |
+| **Camera-Ready Submission** | January 28, 2026 |
+| **Date of IISEC 2026 Conference** | February 5–6, 2026 |
+| **Published on IEEE Xplore** | March 10, 2026 |
+
+---
+
+### Links
+
+- **IEEE Xplore:** https://doi.org/10.1109/IISEC69317.2026.11418478
+- **Repository:** https://github.com/KCyrusNF/Prompting-Strategies-CodeGen-Study
+- **Conference Website:** https://iisec.tbdakademi.org.tr/2026/
